@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ARM</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Side bar -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded-circle" src="img/user.png" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">aragent02</span>
+                                <span class="text-muted text-xs block">Administrator <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">ตั้งค่าบัญชีผู้ใช้</a></li>
+                                <li><a class="dropdown-item" href="https://www.arresearch.com/m/ContactUs">ติดต่อแอดมิน</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">ออกจากระบบ</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element border-bottom">
+                            ARM
+                        </div>
+                    </li>
+                    <li class="active icon">
+                        <a href="index.html"><img src="img/all.png" class="img-fluid rounded-circle"><span class="nav-label">All</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active"><a href="index.html">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="icon">
+                        <a href="#"><img src="img/facebook.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Facebook</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="icon">
+                        <a href="#"><img src="img/instagram.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Instagram</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="icon">
+                        <a href="#"><img src="img/twitter.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Twitter</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="icon">
+                        <a href="#"><img src="img/line.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Line</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+                <div class="arm-logo-main">
+                    <a href="index.html">
+                        <img src="img/app_logo_hdr2.png" class="img-fluid text-center animated fadeInUp" width="200px" height="100px" alt="Armshare" style="margin: 4%; background-color: #3b6c85; border-radius: 5px;">
+                    </a>
+                </div>
+                <!-- <div class="arm-logo">
+                    <a href="index.html">
+                        <img src="img/app_logo_hdr2.png" class="img-fluid" alt="Armshare"">
+                    </a>
+                </div> -->
+            </div>
+        </nav>
+
+        <!-- Nav bar -->
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i
+                                class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 10px; font-size: 15px;">
+                            <span><a href="#" class="m-r-xs text-info">Ekarat Co., Ltd.</a></span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-user"></i> <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="float-right">46h ago</small>
+                                            <strong>Mike Loreipsum</strong> started following <strong>Monica
+                                                Smith</strong>. <br>
+                                            <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="float-right text-navy">5h ago</small>
+                                            <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica
+                                                Smith</strong>. <br>
+                                            <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="float-right">23h ago</small>
+                                            <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                            <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html" class="dropdown-item">
+                                            <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-trash"></i> <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                            <span class="float-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="profile.html" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                            <span class="float-right text-muted small">12 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="grid_options.html" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                            <span class="float-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html" class="dropdown-item">
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <!-- Content  -->
+
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row border-bottom white-bg dashboard-header">
+                    <div class="col-lg-2">
+                        <a role="button" href="#">
+                            <div class="widget style1 red-bg">
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <i class="fa fa-comments fa-4x"></i>
+                                    </div>
+                                    <div class="col-8 text-right box-btn">
+                                        <span>New messages</span>
+                                        <h2 class="font-bold">10</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a role="button" href="#">
+                            <div class="widget style1 yellow-bg">
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <i class="fa fa-clock-o fa-4x"></i>
+                                    </div>
+                                    <div class="col-8 text-right box-btn">
+                                        <span>Pending</span>
+                                        <h2 class="font-bold">5</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a role="button" href="#">
+                            <div class="widget style1 btn-primary">
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <i class="fa fa-check-circle-o fa-4x"></i>
+                                    </div>
+                                    <div class="col-8 text-right box-btn">
+                                        <span>closed</span>
+                                        <h2 class="font-bold">2</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a role="button" href="#">
+                            <div class="widget style1 btn-default">
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <i class="fa fa-envelope fa-4x"></i>
+                                    </div>
+                                    <div class="col-8 text-right box-btn">
+                                        <span>inbox</span>
+                                        <h2 class="font-bold">2</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a role="button" href="#">
+                            <div class="widget style1 btn-default">
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <i class="fa fa-edit fa-4x"></i>
+                                    </div>
+                                    <div class="col-8 text-right box-btn">
+                                        <span>user post</span>
+                                        <h2 class="font-bold">1</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a role="button" href="#">
+                            <div class="widget style1 btn-default">
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <i class="fa fa-share-alt-square fa-4x"></i>
+                                    </div>
+                                    <div class="col-8 text-right box-btn">
+                                        <span>page post</span>
+                                        <h2 class="font-bold">1</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="ibox">
+                                    <div class="ibox-title">
+                                        <h5>Your Inbox</h5>
+                                        <div class="ibox-tools">
+                                            <a class="collapse-link" href="">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <i class="fa fa-wrench"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-user">
+                                                <li><a href="#" class="dropdown-item">Config option 1</a>
+                                                </li>
+                                                <li><a href="#" class="dropdown-item">Config option 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content no-padding">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <img src="img/user.png" class="img-profile" style="width: 40px; height: 40px;">
+                                                <a class="text-info open-link" href="#">
+                                                    Chat Number 1</a>
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minute
+                                                    ago</small>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <img src="img/user.png" class="img-profile" style="width: 40px; height: 40px;">
+                                                <a class="text-info open-link1" href="#">
+                                                    Chat Number 2</a>
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 10 minutes
+                                                    ago</small>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <img src="img/user.png" class="img-profile" style="width: 40px; height: 40px;">
+                                                <a class="text-info" href="#">
+                                                    Chat Number 3</a>
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 20 minutes
+                                                    ago</small>
+                                            </li>
+                                            <li class="list-group-item ">
+                                                <img src="img/user.png" class="img-profile" style="width: 40px; height: 40px;">
+                                                <a class="text-info" href="#">
+                                                    Chat Number 4</a>
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 hour
+                                                    ago</small>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <img src="img/user.png" class="img-profile" style="width: 40px; height: 40px;">
+                                                <a class="text-info" href="#">
+                                                    Chat Number 5</a>
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 hours
+                                                    ago</small>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <img src="img/user.png" class="img-profile" style="width: 40px; height: 40px;">
+                                                <a class="text-info" href="#">
+                                                    Chat Number 6</a>
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 day
+                                                    ago</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 pop-chat">
+                                <div class="ibox" id="conversation1">
+                                    <div class="ibox-title">
+                                        <h5>Chat Number 1</h5>
+                                        <div class="ibox-tools">
+                                            <a class="collapse-link" href="">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <i class="fa fa-wrench"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-user">
+                                                <li><a href="#" class="dropdown-item">Config option 1</a>
+                                                </li>
+                                                <li><a href="#" class="dropdown-item">Config option 2</a>
+                                                </li>
+                                            </ul>
+                                            <a class="open-link" href="#">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content ibox-heading">
+                                        <a href="#">
+                                            <img src="img/user.png" class="img-profile" style="width: 40px; height: 40px;">
+                                            <span class="text-muted">Username</span>
+                                        </a>
+                                        <div class="job-btn">
+                                            <a class="btn btn-warning" role="button" href="#">
+                                                Assess case
+                                            </a>
+                                            <a class="btn btn-info" role="button" href="#">
+                                                Close case
+                                            </a>
+                                            <a class="btn btn-danger" role="button" href="#">
+                                                <i class="fa fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="ibox chat-view">
+                                                <div class="ibox-content">
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            <div class="chat-discussion">
+                                                                <div class="chat-message left">
+                                                                    <img class="message-avatar" src="img/a1.jpg" alt="">
+                                                                    <div class="message">
+                                                                        <a class="message-author" href="#"> Michael
+                                                                            Smith </a>
+                                                                        <span class="message-date"> Mon Jan 26 2015 -
+                                                                            18:39:23 </span>
+                                                                        <span class="message-content">
+                                                                            Lorem ipsum dolor sit amet, consectetuer
+                                                                            adipiscing elit, sed diam nonummy nibh
+                                                                            euismod tincidunt ut laoreet dolore magna
+                                                                            aliquam erat volutpat.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chat-message right">
+                                                                    <img class="message-avatar" src="img/a4.jpg" alt="">
+                                                                    <div class="message">
+                                                                        <a class="message-author" href="#"> Karl Jordan
+                                                                        </a>
+                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                            11:12:36 </span>
+                                                                        <span class="message-content">
+                                                                            Many desktop publishing packages and web
+                                                                            page editors now use Lorem Ipsum as their
+                                                                            default model text, and a search for 'lorem
+                                                                            ipsum' will uncover.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chat-message right">
+                                                                    <img class="message-avatar" src="img/a2.jpg" alt="">
+                                                                    <div class="message">
+                                                                        <a class="message-author" href="#"> Michael
+                                                                            Smith </a>
+                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                            11:12:36 </span>
+                                                                        <span class="message-content">
+                                                                            There are many variations of passages of
+                                                                            Lorem Ipsum available, but the majority have
+                                                                            suffered alteration.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chat-message left">
+                                                                    <img class="message-avatar" src="img/a5.jpg" alt="">
+                                                                    <div class="message">
+                                                                        <a class="message-author" href="#"> Alice Jordan
+                                                                        </a>
+                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                            11:12:36 </span>
+                                                                        <span class="message-content">
+                                                                            All the Lorem Ipsum generators on the
+                                                                            Internet tend to repeat predefined chunks as
+                                                                            necessary, making this the first true
+                                                                            generator on the Internet.
+                                                                            It uses a dictionary of over 200 Latin
+                                                                            words.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chat-message right">
+                                                                    <img class="message-avatar" src="img/a6.jpg" alt="">
+                                                                    <div class="message">
+                                                                        <a class="message-author" href="#"> Mark Smith
+                                                                        </a>
+                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                            11:12:36 </span>
+                                                                        <span class="message-content">
+                                                                            All the Lorem Ipsum generators on the
+                                                                            Internet tend to repeat predefined chunks as
+                                                                            necessary, making this the first true
+                                                                            generator on the Internet.
+                                                                            It uses a dictionary of over 200 Latin
+                                                                            words.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <!-- <div class="chat-message-form"> -->
+                                                            <!-- <div class="form-group">
+                                                                    <input type="text" class="form-control message-input" id="write-msg" placeholder="Type a message" />
+                                                                </div> -->
+                                                            <label class="btn btn-mute" style="cursor: pointer;">
+                                                                    <i class="fa fa-paperclip"></i>
+                                                                    <input type="file" hidden>
+                                                                </label>
+                                                            <span class="input-msg-write">
+                                                                    <input type="text" class="write-msg" id="write-msg" placeholder="Type a message" />
+                                                                    <button class="msg-send-btn" type="button"><i class="fa fa-send"
+                                                                            aria-hidden="true"></i></button>
+                                                                </span>
+                                                            <!-- </div> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 pop-chat1">
+                                <div class="ibox" id="conversation2">
+                                    <div class="ibox-title">
+                                        <h5>Chat Number 2</h5>
+                                        <div class="ibox-tools">
+                                            <a class="collapse-link" href="">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <i class="fa fa-wrench"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-user">
+                                                <li><a href="#" class="dropdown-item">Config option 1</a>
+                                                </li>
+                                                <li><a href="#" class="dropdown-item">Config option 2</a>
+                                                </li>
+                                            </ul>
+                                            <a class="open-link1" href="#">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content ibox-heading">
+                                        <a href="#">
+                                            <img src="img/user.png" class="img-profile" style="width: 40px; height: 40px;">
+                                            <span class="text-muted">Username #2</span>
+                                        </a>
+                                        <div class="job-btn">
+                                            <a class="btn btn-warning" role="button" href="#">
+                                                Assess case
+                                            </a>
+                                            <a class="btn btn-info" role="button" href="#">
+                                                Close case
+                                            </a>
+                                            <a class="btn btn-danger" role="button" href="#">
+                                                <i class="fa fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="ibox chat-view">
+                                                <div class="ibox-content">
+                                                    <div class="row">
+                                                        <div class="col-md">
+                                                            <div class="chat-discussion">
+                                                                <div class="chat-message left">
+                                                                    <img class="message-avatar" src="img/a1.jpg" alt="">
+                                                                    <div class="message">
+                                                                        <a class="message-author" href="#"> Michael
+                                                                            Smith </a>
+                                                                        <span class="message-date"> Mon Jan 26 2015 -
+                                                                            18:39:23 </span>
+                                                                        <span class="message-content">
+                                                                            Lorem ipsum dolor sit amet, consectetuer
+                                                                            adipiscing elit, sed diam nonummy nibh
+                                                                            euismod tincidunt ut laoreet dolore magna
+                                                                            aliquam erat volutpat.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chat-message right">
+                                                                    <img class="message-avatar" src="img/a4.jpg" alt="">
+                                                                    <div class="message">
+                                                                        <a class="message-author" href="#"> Karl Jordan
+                                                                        </a>
+                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                            11:12:36 </span>
+                                                                        <span class="message-content">
+                                                                            Many desktop publishing packages and web
+                                                                            page editors now use Lorem Ipsum as their
+                                                                            default model text, and a search for 'lorem
+                                                                            ipsum' will uncover.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chat-message right">
+                                                                    <img class="message-avatar" src="img/a2.jpg" alt="">
+                                                                    <div class="message">
+                                                                        <a class="message-author" href="#"> Michael
+                                                                            Smith </a>
+                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                            11:12:36 </span>
+                                                                        <span class="message-content">
+                                                                            There are many variations of passages of
+                                                                            Lorem Ipsum available, but the majority have
+                                                                            suffered alteration.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chat-message left">
+                                                                    <img class="message-avatar" src="img/a5.jpg" alt="">
+                                                                    <div class="message">
+                                                                        <a class="message-author" href="#"> Alice Jordan
+                                                                        </a>
+                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                            11:12:36 </span>
+                                                                        <span class="message-content">
+                                                                            All the Lorem Ipsum generators on the
+                                                                            Internet tend to repeat predefined chunks as
+                                                                            necessary, making this the first true
+                                                                            generator on the Internet.
+                                                                            It uses a dictionary of over 200 Latin
+                                                                            words.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chat-message right">
+                                                                    <img class="message-avatar" src="img/a6.jpg" alt="">
+                                                                    <div class="message">
+                                                                        <a class="message-author" href="#"> Mark Smith
+                                                                        </a>
+                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                            11:12:36 </span>
+                                                                        <span class="message-content">
+                                                                            All the Lorem Ipsum generators on the
+                                                                            Internet tend to repeat predefined chunks as
+                                                                            necessary, making this the first true
+                                                                            generator on the Internet.
+                                                                            It uses a dictionary of over 200 Latin
+                                                                            words.
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <!-- <div class="chat-message-form"> -->
+                                                            <!-- <div class="form-group">
+                                                                    <input type="text" class="form-control message-input" id="write-msg" placeholder="Type a message" />
+                                                                </div> -->
+                                                            <label class="btn btn-mute" style="cursor: pointer;">
+                                                                    <i class="fa fa-paperclip"></i>
+                                                                    <input type="file" hidden>
+                                                                </label>
+                                                            <span class="input-msg-write">
+                                                                    <input type="text" class="write-msg" id="write-msg" placeholder="Type a message" />
+                                                                    <button class="msg-send-btn" type="button"><i class="fa fa-send"
+                                                                            aria-hidden="true"></i></button>
+                                                                </span>
+                                                            <!-- </div> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="ibox ">
+                                    <div class="ibox-title">
+                                        <h5>Alpha project</h5>
+                                        <div class="ibox-tools">
+                                            <a class="collapse-link" href="">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                <i class="fa fa-wrench"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-user">
+                                                <li><a href="#" class="dropdown-item">Config option 1</a>
+                                                </li>
+                                                <li><a href="#" class="dropdown-item">Config option 2</a>
+                                                </li>
+                                            </ul>
+                                            <a class="close-link" href="">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content ibox-heading">
+                                        <h3>You have meeting today!</h3>
+                                        <small><i class="fa fa-map-marker"></i> Meeting is on 6:00am. Check your
+                                            schedule to see detail.</small>
+                                    </div>
+                                    <div class="ibox-content inspinia-timeline">
+
+                                        <div class="timeline-item">
+                                            <div class="row">
+                                                <div class="col-4 date">
+                                                    <i class="fa fa-briefcase"></i> 6:00 am
+                                                    <br />
+                                                    <small class="text-navy">2 hour ago</small>
+                                                </div>
+                                                <div class="col content no-top-border">
+                                                    <p class="m-b-xs"><strong>Meeting</strong></p>
+
+                                                    <p>Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the sale.
+                                                    </p>
+
+                                                    <p><span data-diameter="40" class="updating-chart">5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,4,7,3,2,9,8,7,4,5,1,2,9,5,4,7,2,7,7,3,5,2</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="row">
+                                                <div class="col-4 date">
+                                                    <i class="fa fa-file"></i> 7:00 am
+                                                    <br />
+                                                    <small class="text-navy">3 hour ago</small>
+                                                </div>
+                                                <div class="col content">
+                                                    <p class="m-b-xs"><strong>Send documents to Mike</strong></p>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="row">
+                                                <div class="col-4 date">
+                                                    <i class="fa fa-coffee"></i> 8:00 am
+                                                    <br />
+                                                </div>
+                                                <div class="col content">
+                                                    <p class="m-b-xs"><strong>Coffee Break</strong></p>
+                                                    <p>
+                                                        Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="row">
+                                                <div class="col-4 date">
+                                                    <i class="fa fa-phone"></i> 11:00 am
+                                                    <br />
+                                                    <small class="text-navy">21 hour ago</small>
+                                                </div>
+                                                <div class="col content">
+                                                    <p class="m-b-xs"><strong>Phone with Jeronimo</strong></p>
+                                                    <p>
+                                                        Lorem Ipsum has been the industry's standard dummy text ever since.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="row">
+                                                <div class="col-4 date">
+                                                    <i class="fa fa-user-md"></i> 09:00 pm
+                                                    <br />
+                                                    <small>21 hour ago</small>
+                                                </div>
+                                                <div class="col content">
+                                                    <p class="m-b-xs"><strong>Go to the doctor dr Smith</strong></p>
+                                                    <p>
+                                                        Find some issue and go to doctor.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="row">
+                                                <div class="col-4 date">
+                                                    <i class="fa fa-comments"></i> 12:50 pm
+                                                    <br />
+                                                    <small class="text-navy">48 hour ago</small>
+                                                </div>
+                                                <div class="col content">
+                                                    <p class="m-b-xs"><strong>Chat with Monica and Sandra</strong></p>
+                                                    <p>
+                                                        Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="float-right">
+                    10GB of <strong>250GB</strong> Free.
+                </div>
+                <div>
+                    <strong>Copyright</strong> Advanced Research Group Co., Ltd. &copy; 2020
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Toast notification -->
+
+    <div class="toast toast toast-bootstrap hide" role="alert" aria-live="assertive" aria-atomic="true" style="position: absolute; top:20px; right:20px">
+        <div class="toast-header">
+            <i class="fa fa-square text-navy"> </i>
+            <strong class="mr-auto m-l-sm">Notification</strong>
+            <small>1 min ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Welcome to <strong>INSPINIA</strong> - Responsive Admin Theme.
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+    <!-- Toastr -->
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $("a.open-link").click(function() {
+                $("div.pop-chat").toggleClass("active");
+                $("div.pop-chat1").removeClass("active");
+            })
+            $("a.open-link1").click(function() {
+                $("div.pop-chat1").toggleClass("active");
+                $("div.pop-chat").removeClass("active");
+            })
+            $("a.open-link2").click(function() {
+                $("div.pop-chat2").toggleClass("active");
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+            let toast = $('.toast');
+
+            setTimeout(function() {
+                toast.toast({
+                    delay: 5000,
+                    animation: true
+                });
+                toast.toast('show');
+
+            }, 2200);
+
+            var data1 = [
+                [0, 4],
+                [1, 8],
+                [2, 5],
+                [3, 10],
+                [4, 4],
+                [5, 16],
+                [6, 5],
+                [7, 11],
+                [8, 6],
+                [9, 11],
+                [10, 30],
+                [11, 10],
+                [12, 13],
+                [13, 4],
+                [14, 3],
+                [15, 3],
+                [16, 6]
+            ];
+            var data2 = [
+                [0, 1],
+                [1, 0],
+                [2, 2],
+                [3, 0],
+                [4, 1],
+                [5, 3],
+                [6, 1],
+                [7, 5],
+                [8, 2],
+                [9, 3],
+                [10, 2],
+                [11, 1],
+                [12, 0],
+                [13, 2],
+                [14, 8],
+                [15, 0],
+                [16, 0]
+            ];
+            $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
+                data1, data2
+            ], {
+                series: {
+                    lines: {
+                        show: false,
+                        fill: true
+                    },
+                    splines: {
+                        show: true,
+                        tension: 0.4,
+                        lineWidth: 1,
+                        fill: 0.4
+                    },
+                    points: {
+                        radius: 0,
+                        show: true
+                    },
+                    shadowSize: 2
+                },
+                grid: {
+                    hoverable: true,
+                    clickable: true,
+                    tickColor: "#d5d5d5",
+                    borderWidth: 1,
+                    color: '#d5d5d5'
+                },
+                colors: ["#1ab394", "#1C84C6"],
+                xaxis: {},
+                yaxis: {
+                    ticks: 4
+                },
+                tooltip: false
+            });
+
+            var doughnutData = {
+                labels: ["App", "Software", "Laptop"],
+                datasets: [{
+                    data: [300, 50, 100],
+                    backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
+                }]
+            };
+
+
+            var doughnutOptions = {
+                responsive: false,
+                legend: {
+                    display: false
+                }
+            };
+
+
+            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+            new Chart(ctx4, {
+                type: 'doughnut',
+                data: doughnutData,
+                options: doughnutOptions
+            });
+
+            var doughnutData = {
+                labels: ["App", "Software", "Laptop"],
+                datasets: [{
+                    data: [70, 27, 85],
+                    backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
+                }]
+            };
+
+
+            var doughnutOptions = {
+                responsive: false,
+                legend: {
+                    display: false
+                }
+            };
+
+
+            var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
+            new Chart(ctx4, {
+                type: 'doughnut',
+                data: doughnutData,
+                options: doughnutOptions
+            });
+
+        });
+
+        $(window).bind("scroll", function() {
+            let toast = $('.toast');
+            toast.css("top", window.pageYOffset + 20);
+
+        });
+    </script>
+</body>
+
+</html>

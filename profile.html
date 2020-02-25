@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ARM</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Side bar -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded-circle" src="img/user.png" />
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block m-t-xs font-bold">aragent02</span>
+                                <span class="text-muted text-xs block">Administrator <b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">ตั้งค่าบัญชีผู้ใช้</a></li>
+                                <li><a class="dropdown-item" href="https://www.arresearch.com/m/ContactUs">ติดต่อแอดมิน</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">ออกจากระบบ</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element border-bottom">
+                            ARM
+                        </div>
+                    </li>
+                    <li class="active icon">
+                        <a href="index.html"><img src="img/all.png" class="img-fluid rounded-circle"><span class="nav-label">All</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active"><a href="index.html">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="icon">
+                        <a href="#"><img src="img/facebook.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Facebook</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="icon">
+                        <a href="#"><img src="img/instagram.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Instagram</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="icon">
+                        <a href="#"><img src="img/twitter.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Twitter</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="icon">
+                        <a href="#"><img src="img/line.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Line</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+                <div class="arm-logo-main">
+                    <a href="index.html">
+                        <img src="img/app_logo_hdr2.png" class="img-fluid text-center animated" width="200px" height="100px" alt="Armshare" style="margin: 4%; background-color: #3b6c85; border-radius: 5px;">
+                    </a>
+                </div>
+                <!-- <div class="arm-logo">
+                    <a href="index.html">
+                        <img src="img/app_logo_hdr2.png" class="img-fluid" alt="Armshare"">
+                    </a>
+                </div> -->
+            </div>
+        </nav>
+
+        <!-- Nav bar -->
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i
+                                class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li style="padding: 10px; font-size: 15px;">
+                            <span><a href="#" class="m-r-xs text-info">Ekarat Co., Ltd.</a></span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-user"></i> <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="float-right">46h ago</small>
+                                            <strong>Mike Loreipsum</strong> started following <strong>Monica
+                                                Smith</strong>. <br>
+                                            <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="float-right text-navy">5h ago</small>
+                                            <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica
+                                                Smith</strong>. <br>
+                                            <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a class="dropdown-item float-left" href="profile.html">
+                                            <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="float-right">23h ago</small>
+                                            <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                            <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html" class="dropdown-item">
+                                            <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-trash"></i> <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                            <span class="float-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="profile.html" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                            <span class="float-right text-muted small">12 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="grid_options.html" class="dropdown-item">
+                                        <div>
+                                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                            <span class="float-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html" class="dropdown-item">
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <!-- Page Content  -->
+            <!-- <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2><a href="myAccount.html">My Account</a></h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="myAccount.html"><strong>   Profile</strong></a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="passChange.html">Password</a>
+                        </li>
+                    </ol>
+                </div>
+            </div> -->
+            <div class="wrapper wrapper-content animated fadeInUp">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="ibox active">
+                            <div class="ibox-title">
+                                <h2>My Account</h2>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content no-padding">
+                                <ul class="list-group">
+                                    <li class="active list-group-item bg-danger">
+                                        <i class="fa fa-user"></i>
+                                        <a class="sub-menu-item" href="profile.html">Profile</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fa fa-edit"></i>
+                                        <a class="sub-menu-item" href="password.html">Password</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <h2 style="margin-left: 10px;">Profile</h2>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#" class="dropdown-item">Config option 1</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row account">
+                                    <div class="col profile">
+                                        <div class="profileImg">
+                                            <form class="form-group" action="#" method="GET" id="submitProfile">
+                                                <div id="profile-container">
+                                                    <img id="profileImage1">
+                                                </div>
+                                                <i class="fa fa-camera" id=profileImage></i>
+                                                <input id="imageUpload" type="file" accept="image/*" name="profile_photo" placeholder="Photo" required="" hidden>
+                                            </form>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 ml-5 mr-5 mt-3 mb-3">
+                                                <div style="font-size: 18px;color: black;">Name</div>
+                                            </div>
+                                            <div class="col-3 mt-3 mb-3">
+                                                <div style="color: silver; font-size: 18px;">Ekarat Co., Ltd.</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 ml-5 mr-5 mt-3 mb-3">
+                                                <div style="font-size: 18px;color: black;">Username</div>
+                                            </div>
+                                            <div class="col-3 mt-3 mb-3">
+                                                <div style="color: silver; font-size: 18px;">aragent02</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 ml-5 mr-5 mt-3 mb-3">
+                                                <div style=" font-size: 18px;color: black; ">Role</div>
+                                            </div>
+                                            <div class="col-3 mt-3 mb-3">
+                                                <div style="color: silver; font-size: 18px; ">Administrator</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-3 mt-5 ml-5">
+                                                <input type="button" class="btn btn-primary submit" onclick="submit()" value="Save Change">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="myModal" class="modal">
+                                    <span class="close ">&times;</span>
+                                    <img class="modal-content" id="img01 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.js "></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js "></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js "></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js "></script>
+    <script src="js/plugins/pace/pace.min.js "></script>
+
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js "></script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal ");
+
+        // Get the image and insert it inside the modal - use its "alt " text as a caption
+        var img = document.getElementById("profileImage1 ");
+        var modalImg = document.getElementById("img01 ");
+        img.onclick = function() {
+            modal.style.display = "block ";
+            modalImg.src = this.src;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close ")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none ";
+        }
+    </script>
+
+    <!-- Profile picture -->
+    <script>
+        $("#profileImage ").click(function(e) {
+            $("#imageUpload ").click();
+        });
+
+        function fasterPreview(uploader) {
+            if (uploader.files && uploader.files[0]) {
+                $('#profileImage1').attr('src',
+                    window.URL.createObjectURL(uploader.files[0]));
+            }
+        }
+
+        $("#imageUpload ").change(function() {
+            fasterPreview(this);
+        });
+    </script>
+    <script>
+        function submit() {
+            $(document).ready(function() {
+                $('.submit').click(function() {
+                    swal({
+                            title: "Are you sure? ",
+                            text: "Your profile will be change! ",
+                            type: "warning ",
+                            showCancelButton: true,
+                            confirmButtonColor: "#DD6B55 ",
+                            confirmButtonText: "Yes, confirm change! ",
+                            cancelButtonText: "No, cancel! ",
+                            closeOnConfirm: false,
+                            closeOnCancel: false
+                        },
+                        function(isConfirm) {
+                            if (isConfirm) {
+                                swal("Completed ", "Your profile updated ", "success ");
+                                document.getElementById("submitProfile ").submit();
+                            } else {
+                                swal("Cancelled ", "Your profile will not update. ", "error ");
+                            }
+                        });
+                });
+
+
+            });
+        };
+    </script>
+
+
+
+</body>
+
+</html>
