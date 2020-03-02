@@ -18,12 +18,14 @@
     <!-- Gritter -->
     <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
 
+    <link href="css/plugins/bootstrapSocial/bootstrap-social.css" rel="stylesheet">
+
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="skin-5">
     <div id="wrapper">
 
         <!-- Side bar -->
@@ -48,44 +50,44 @@
                             ARM
                         </div>
                     </li>
-                    <li class="active icon">
-                        <a href="index.html"><img src="img/all.png" class="img-fluid rounded-circle"><span class="nav-label">All</span> <span class="fa arrow"></span></a>
+                    <li class="icon active">
+                        <a href="index.html" class="act"><img src="img/all.png" class="img-fluid rounded-circle"><span class="nav-label">All</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="active"><a href="index.html">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
+                            <li><a href="index.html">Page 1</a></li>
+                            <li><a href="">Page 2</a></li>
+                            <li><a href="">Page 3</a></li>
                         </ul>
                     </li>
                     <li class="icon">
-                        <a href="#"><img src="img/facebook.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Facebook</span><span class="fa arrow"></span></a>
+                        <a href="#"><img src="img/facebook.png" class="img-fluid rounded-circle"><span class="nav-label">Facebook</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="index.html">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
+                            <li><a href="">Page 2</a></li>
+                            <li><a href="">Page 3</a></li>
                         </ul>
                     </li>
                     <li class="icon">
-                        <a href="#"><img src="img/instagram.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Instagram</span><span class="fa arrow"></span></a>
+                        <a href="#"><img src="img/instagram.png" class="img-fluid rounded-circle"><span class="nav-label">Instagram</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="index.html">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
+                            <li><a href="">Page 2</a></li>
+                            <li><a href="">Page 3</a></li>
                         </ul>
                     </li>
                     <li class="icon">
-                        <a href="#"><img src="img/twitter.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Twitter</span><span class="fa arrow"></span></a>
+                        <a href="#"><img src="img/twitter.png" class="img-fluid rounded-circle"><span class="nav-label">Twitter</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="index.html">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
+                            <li><a href="">Page 2</a></li>
+                            <li><a href="">Page 3</a></li>
                         </ul>
                     </li>
                     <li class="icon">
-                        <a href="#"><img src="img/line.png" class="img-fluid z-depth-1 rounded-circle"><span class="nav-label">Line</span><span class="fa arrow"></span></a>
+                        <a href="#"><img src="img/line.png" class="img-fluid rounded-circle"><span class="nav-label">Line</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="index.html">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
+                            <li><a href="">Page 2</a></li>
+                            <li><a href="">Page 3</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -234,11 +236,13 @@
             <div class="wrapper wrapper-content animated fadeInRight">
                 <div class="row border-bottom white-bg dashboard-header">
                     <div class="col-lg-2">
-                        <a role="button" href="#">
+                        <a role="button" href="#" class="new-msg" data-animation="tada">
                             <div class="widget style1 red-bg">
                                 <div class="row">
                                     <div class="col-4 text-center">
-                                        <i class="fa fa-comments fa-4x"></i>
+                                        <div id="new-msg">
+                                            <i class="fa fa-comments fa-4x"></i>
+                                        </div>
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>New messages</span>
@@ -249,11 +253,13 @@
                         </a>
                     </div>
                     <div class="col-lg-2">
-                        <a role="button" href="#">
+                        <a role="button" href="#" class="pend-msg" data-animation="pulse">
                             <div class="widget style1 yellow-bg">
                                 <div class="row">
                                     <div class="col-4 text-center">
-                                        <i class="fa fa-clock-o fa-4x"></i>
+                                        <div id="pend-msg">
+                                            <i class="fa fa-clock-o fa-4x"></i>
+                                        </div>
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>Pending</span>
@@ -264,11 +270,13 @@
                         </a>
                     </div>
                     <div class="col-lg-2">
-                        <a role="button" href="#">
+                        <a role="button" href="#" class="cls-msg" data-animation="pulse">
                             <div class="widget style1 btn-primary">
                                 <div class="row">
                                     <div class="col-4 text-center">
-                                        <i class="fa fa-check-circle-o fa-4x"></i>
+                                        <div id="cls-msg">
+                                            <i class="fa fa-check-circle-o fa-4x"></i>
+                                        </div>
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>closed</span>
@@ -279,11 +287,13 @@
                         </a>
                     </div>
                     <div class="col-lg-2">
-                        <a role="button" href="#">
+                        <a role="button" href="#" class="inb" data-animation="swing">
                             <div class="widget style1 btn-default">
                                 <div class="row">
                                     <div class="col-4 text-center">
-                                        <i class="fa fa-envelope fa-4x"></i>
+                                        <div id="inb">
+                                            <i class="fa fa-envelope fa-4x"></i>
+                                        </div>
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>inbox</span>
@@ -294,11 +304,13 @@
                         </a>
                     </div>
                     <div class="col-lg-2">
-                        <a role="button" href="#">
+                        <a role="button" href="#" class="upost" data-animation="pulse">
                             <div class="widget style1 btn-default">
                                 <div class="row">
                                     <div class="col-4 text-center">
-                                        <i class="fa fa-edit fa-4x"></i>
+                                        <div id="upost">
+                                            <i class="fa fa-edit fa-4x"></i>
+                                        </div>
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>user post</span>
@@ -309,11 +321,13 @@
                         </a>
                     </div>
                     <div class="col-lg-2">
-                        <a role="button" href="#">
+                        <a role="button" href="#" class="ppost" data-animation="pulse">
                             <div class="widget style1 btn-default">
                                 <div class="row">
                                     <div class="col-4 text-center">
-                                        <i class="fa fa-share-alt-square fa-4x"></i>
+                                        <div id="ppost">
+                                            <i class="fa fa-share-alt-square fa-4x"></i>
+                                        </div>
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>page post</span>
@@ -394,7 +408,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 pop-chat">
+                            <div class="col-lg-6 pop-chat">
                                 <div class="ibox" id="conversation1">
                                     <div class="ibox-title">
                                         <h5>Chat Number 1</h5>
@@ -462,7 +476,7 @@
                                                                         </a>
                                                                         <span class="message-date"> Fri Jan 25 2015 -
                                                                             11:12:36 </span>
-                                                                        <span class="message-content">
+                                                                        <span class="message-content text-left">
                                                                             Many desktop publishing packages and web
                                                                             page editors now use Lorem Ipsum as their
                                                                             default model text, and a search for 'lorem
@@ -477,7 +491,7 @@
                                                                             Smith </a>
                                                                         <span class="message-date"> Fri Jan 25 2015 -
                                                                             11:12:36 </span>
-                                                                        <span class="message-content">
+                                                                        <span class="message-content text-left">
                                                                             There are many variations of passages of
                                                                             Lorem Ipsum available, but the majority have
                                                                             suffered alteration.
@@ -508,7 +522,7 @@
                                                                         </a>
                                                                         <span class="message-date"> Fri Jan 25 2015 -
                                                                             11:12:36 </span>
-                                                                        <span class="message-content">
+                                                                        <span class="message-content text-left">
                                                                             All the Lorem Ipsum generators on the
                                                                             Internet tend to repeat predefined chunks as
                                                                             necessary, making this the first true
@@ -545,7 +559,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 pop-chat1">
+                            <div class="col-lg-6 pop-chat1">
                                 <div class="ibox" id="conversation2">
                                     <div class="ibox-title">
                                         <h5>Chat Number 2</h5>
@@ -613,7 +627,7 @@
                                                                         </a>
                                                                         <span class="message-date"> Fri Jan 25 2015 -
                                                                             11:12:36 </span>
-                                                                        <span class="message-content">
+                                                                        <span class="message-content text-left">
                                                                             Many desktop publishing packages and web
                                                                             page editors now use Lorem Ipsum as their
                                                                             default model text, and a search for 'lorem
@@ -628,7 +642,7 @@
                                                                             Smith </a>
                                                                         <span class="message-date"> Fri Jan 25 2015 -
                                                                             11:12:36 </span>
-                                                                        <span class="message-content">
+                                                                        <span class="message-content text-left">
                                                                             There are many variations of passages of
                                                                             Lorem Ipsum available, but the majority have
                                                                             suffered alteration.
@@ -659,7 +673,7 @@
                                                                         </a>
                                                                         <span class="message-date"> Fri Jan 25 2015 -
                                                                             11:12:36 </span>
-                                                                        <span class="message-content">
+                                                                        <span class="message-content text-left">
                                                                             All the Lorem Ipsum generators on the
                                                                             Internet tend to repeat predefined chunks as
                                                                             necessary, making this the first true
@@ -854,6 +868,156 @@
         </div>
     </div>
 
+    <div class="theme-config">
+        <div class="theme-config-box show">
+            <div class="spin-icon">
+                <i class="fa fa-cogs fa-spin"></i>
+            </div>
+            <div class="skin-settings">
+                <div class="title">Configuration <br>
+                    <small style="text-transform: none;font-weight: 400">
+                    Config box designed for demo purpose. All options available via code.
+                </small></div>
+                <div class="settings-item">
+                    <span>
+                            Collapse menu
+                        </span>
+
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="collapsemenu">
+                            <label class="onoffswitch-label" for="collapsemenu">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-item">
+                    <span>
+                            Fixed sidebar
+                        </span>
+
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="fixedsidebar" class="onoffswitch-checkbox" id="fixedsidebar">
+                            <label class="onoffswitch-label" for="fixedsidebar">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-item">
+                    <span>
+                            Top navbar
+                        </span>
+
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="fixednavbar" class="onoffswitch-checkbox" id="fixednavbar">
+                            <label class="onoffswitch-label" for="fixednavbar">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-item">
+                    <span>
+                            Top navbar v.2
+                            <br>
+                            <small>*Primary layout</small>
+                        </span>
+
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="fixednavbar2" class="onoffswitch-checkbox" id="fixednavbar2">
+                            <label class="onoffswitch-label" for="fixednavbar2">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-item">
+                    <span>
+                            Boxed layout
+                        </span>
+
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="boxedlayout" class="onoffswitch-checkbox" id="boxedlayout">
+                            <label class="onoffswitch-label" for="boxedlayout">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-item">
+                    <span>
+                            Fixed footer
+                        </span>
+
+                    <div class="switch">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="fixedfooter" class="onoffswitch-checkbox" id="fixedfooter">
+                            <label class="onoffswitch-label" for="fixedfooter">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title">Skins</div>
+                <div class="settings-item default-skin">
+                    <span class="skin-name">
+                             <a href="#" class="s-skin-0">
+                                 Default
+                             </a>
+                        </span>
+                </div>
+                <div class="settings-item blue-skin">
+                    <span class="skin-name">
+                            <a href="#" class="s-skin-1">
+                                Blue light
+                            </a>
+                        </span>
+                </div>
+                <div class="settings-item ultra-skin">
+                    <span class="skin-name">
+                            <a href="#" class="s-skin-2">
+                                Ultra skin
+                            </a>
+                        </span>
+                </div>
+                <div class="settings-item yellow-skin">
+                    <span class="skin-name">
+                            <a href="#" class="s-skin-3">
+                                Yellow Skin
+                            </a>
+                        </span>
+                </div>
+                <div class="settings-item dark-skin">
+                    <span class="skin-name">
+                            <a href="#" class="s-skin-5">
+                                Dark Skin
+                            </a>
+                        </span>
+                </div>
+                <div class="settings-item light-skin">
+                    <span class="skin-name">
+                            <a href="#" class="s-skin-4">
+                                Light Skin
+                            </a>
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Mainly scripts -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -894,7 +1058,47 @@
     <!-- Toastr -->
     <script src="js/plugins/toastr/toastr.min.js"></script>
 
+    <!-- Rickshaw -->
+    <script src="js/plugins/rickshaw/vendor/d3.v3.js"></script>
+    <script src="js/plugins/rickshaw/rickshaw.min.js"></script>
 
+    <!-- Animation -->
+    <script>
+        $(document).ready(function() {
+            $('.new-msg').click(function() {
+                var animation = $(this).attr("data-animation");
+                $('#new-msg').toggleClass('animated');
+                $('#new-msg').toggleClass(animation);
+            });
+            $('.pend-msg').click(function() {
+                var animation = $(this).attr("data-animation");
+                $('#pend-msg').toggleClass('animated');
+                $('#pend-msg').toggleClass(animation);
+            });
+            $('.cls-msg').click(function() {
+                var animation = $(this).attr("data-animation");
+                $('#cls-msg').toggleClass('animated');
+                $('#cls-msg').toggleClass(animation);
+            });
+            $('.inb').click(function() {
+                var animation = $(this).attr("data-animation");
+                $('#inb').toggleClass('animated');
+                $('#inb').toggleClass(animation);
+            });
+            $('.upost').click(function() {
+                var animation = $(this).attr("data-animation");
+                $('#upost').toggleClass('animated');
+                $('#upost').toggleClass(animation);
+            });
+            $('.ppost').click(function() {
+                var animation = $(this).attr("data-animation");
+                $('#ppost').toggleClass('animated');
+                $('#ppost').toggleClass(animation);
+            });
+        })
+    </script>
+
+    <!-- Chat pop-up -->
     <script>
         $(document).ready(function() {
             $("a.open-link").click(function() {
@@ -911,6 +1115,7 @@
         })
     </script>
 
+    <!-- Toast notification -->
     <script>
         $(document).ready(function() {
 
@@ -963,88 +1168,88 @@
                 [15, 0],
                 [16, 0]
             ];
-            $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
-                data1, data2
-            ], {
-                series: {
-                    lines: {
-                        show: false,
-                        fill: true
-                    },
-                    splines: {
-                        show: true,
-                        tension: 0.4,
-                        lineWidth: 1,
-                        fill: 0.4
-                    },
-                    points: {
-                        radius: 0,
-                        show: true
-                    },
-                    shadowSize: 2
-                },
-                grid: {
-                    hoverable: true,
-                    clickable: true,
-                    tickColor: "#d5d5d5",
-                    borderWidth: 1,
-                    color: '#d5d5d5'
-                },
-                colors: ["#1ab394", "#1C84C6"],
-                xaxis: {},
-                yaxis: {
-                    ticks: 4
-                },
-                tooltip: false
-            });
+            // $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
+            //     data1, data2
+            // ], {
+            //     series: {
+            //         lines: {
+            //             show: false,
+            //             fill: true
+            //         },
+            //         splines: {
+            //             show: true,
+            //             tension: 0.4,
+            //             lineWidth: 1,
+            //             fill: 0.4
+            //         },
+            //         points: {
+            //             radius: 0,
+            //             show: true
+            //         },
+            //         shadowSize: 2
+            //     },
+            //     grid: {
+            //         hoverable: true,
+            //         clickable: true,
+            //         tickColor: "#d5d5d5",
+            //         borderWidth: 1,
+            //         color: '#d5d5d5'
+            //     },
+            //     colors: ["#1ab394", "#1C84C6"],
+            //     xaxis: {},
+            //     yaxis: {
+            //         ticks: 4
+            //     },
+            //     tooltip: false
+            // });
 
-            var doughnutData = {
-                labels: ["App", "Software", "Laptop"],
-                datasets: [{
-                    data: [300, 50, 100],
-                    backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
-                }]
-            };
-
-
-            var doughnutOptions = {
-                responsive: false,
-                legend: {
-                    display: false
-                }
-            };
+            // var doughnutData = {
+            //     labels: ["App", "Software", "Laptop"],
+            //     datasets: [{
+            //         data: [300, 50, 100],
+            //         backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
+            //     }]
+            // };
 
 
-            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
-            new Chart(ctx4, {
-                type: 'doughnut',
-                data: doughnutData,
-                options: doughnutOptions
-            });
-
-            var doughnutData = {
-                labels: ["App", "Software", "Laptop"],
-                datasets: [{
-                    data: [70, 27, 85],
-                    backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
-                }]
-            };
+            // var doughnutOptions = {
+            //     responsive: false,
+            //     legend: {
+            //         display: false
+            //     }
+            // };
 
 
-            var doughnutOptions = {
-                responsive: false,
-                legend: {
-                    display: false
-                }
-            };
+            // var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+            // new Chart(ctx4, {
+            //     type: 'doughnut',
+            //     data: doughnutData,
+            //     options: doughnutOptions
+            // });
+
+            // var doughnutData = {
+            //     labels: ["App", "Software", "Laptop"],
+            //     datasets: [{
+            //         data: [70, 27, 85],
+            //         backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
+            //     }]
+            // };
 
 
-            var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
-            new Chart(ctx4, {
-                type: 'doughnut',
-                data: doughnutData,
-                options: doughnutOptions
-            });
+            // var doughnutOptions = {
+            //     responsive: false,
+            //     legend: {
+            //         display: false
+            //     }
+            // };
+
+
+            // var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
+            // new Chart(ctx4, {
+            //     type: 'doughnut',
+            //     data: doughnutData,
+            //     options: doughnutOptions
+            // });
 
         });
 
@@ -1053,6 +1258,262 @@
             toast.css("top", window.pageYOffset + 20);
 
         });
+    </script>
+    <script>
+        // Config box
+
+        // Enable/disable fixed top navbar
+        $('#fixednavbar').click(function() {
+            if ($('#fixednavbar').is(':checked')) {
+                $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+                $("body").removeClass('boxed-layout');
+                $("body").addClass('fixed-nav');
+                $('#boxedlayout').prop('checked', false);
+
+                if (localStorageSupport) {
+                    localStorage.setItem("boxedlayout", 'off');
+                }
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixednavbar", 'on');
+                }
+            } else {
+                $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+                $("body").removeClass('fixed-nav');
+                $("body").removeClass('fixed-nav-basic');
+                $('#fixednavbar2').prop('checked', false);
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixednavbar", 'off');
+                }
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixednavbar2", 'off');
+                }
+            }
+        });
+
+        // Enable/disable fixed top navbar
+        $('#fixednavbar2').click(function() {
+            if ($('#fixednavbar2').is(':checked')) {
+                $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+                $("body").removeClass('boxed-layout');
+                $("body").addClass('fixed-nav').addClass('fixed-nav-basic');
+                $('#boxedlayout').prop('checked', false);
+
+                if (localStorageSupport) {
+                    localStorage.setItem("boxedlayout", 'off');
+                }
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixednavbar2", 'on');
+                }
+            } else {
+                $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+                $("body").removeClass('fixed-nav').removeClass('fixed-nav-basic');
+                $('#fixednavbar').prop('checked', false);
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixednavbar2", 'off');
+                }
+                if (localStorageSupport) {
+                    localStorage.setItem("fixednavbar", 'off');
+                }
+            }
+        });
+
+        // Enable/disable fixed sidebar
+        $('#fixedsidebar').click(function() {
+            if ($('#fixedsidebar').is(':checked')) {
+                $("body").addClass('fixed-sidebar');
+                $('.sidebar-collapse').slimScroll({
+                    height: '100%',
+                    railOpacity: 0.9
+                });
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixedsidebar", 'on');
+                }
+            } else {
+                $('.sidebar-collapse').slimScroll({
+                    destroy: true
+                });
+                $('.sidebar-collapse').attr('style', '');
+                $("body").removeClass('fixed-sidebar');
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixedsidebar", 'off');
+                }
+            }
+        });
+
+        // Enable/disable collapse menu
+        $('#collapsemenu').click(function() {
+            if ($('#collapsemenu').is(':checked')) {
+                $("body").addClass('mini-navbar');
+                SmoothlyMenu();
+
+                if (localStorageSupport) {
+                    localStorage.setItem("collapse_menu", 'on');
+                }
+
+            } else {
+                $("body").removeClass('mini-navbar');
+                SmoothlyMenu();
+
+                if (localStorageSupport) {
+                    localStorage.setItem("collapse_menu", 'off');
+                }
+            }
+        });
+
+        // Enable/disable boxed layout
+        $('#boxedlayout').click(function() {
+            if ($('#boxedlayout').is(':checked')) {
+                $("body").addClass('boxed-layout');
+                $('#fixednavbar').prop('checked', false);
+                $('#fixednavbar2').prop('checked', false);
+                $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+                $("body").removeClass('fixed-nav');
+                $("body").removeClass('fixed-nav-basic');
+                $(".footer").removeClass('fixed');
+                $('#fixedfooter').prop('checked', false);
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixednavbar", 'off');
+                }
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixednavbar2", 'off');
+                }
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixedfooter", 'off');
+                }
+
+
+                if (localStorageSupport) {
+                    localStorage.setItem("boxedlayout", 'on');
+                }
+            } else {
+                $("body").removeClass('boxed-layout');
+
+                if (localStorageSupport) {
+                    localStorage.setItem("boxedlayout", 'off');
+                }
+            }
+        });
+
+        // Enable/disable fixed footer
+        $('#fixedfooter').click(function() {
+            if ($('#fixedfooter').is(':checked')) {
+                $('#boxedlayout').prop('checked', false);
+                $("body").removeClass('boxed-layout');
+                $(".footer").addClass('fixed');
+
+                if (localStorageSupport) {
+                    localStorage.setItem("boxedlayout", 'off');
+                }
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixedfooter", 'on');
+                }
+            } else {
+                $(".footer").removeClass('fixed');
+
+                if (localStorageSupport) {
+                    localStorage.setItem("fixedfooter", 'off');
+                }
+            }
+        });
+
+        // SKIN Select
+        $('.spin-icon').click(function() {
+            $(".theme-config-box").toggleClass("show");
+        });
+
+        // Default skin
+        $('.s-skin-0').click(function() {
+            $("body").removeClass("skin-1");
+            $("body").removeClass("skin-2");
+            $("body").removeClass("skin-3");
+            $("body").removeClass("skin-4");
+            $("body").removeClass("skin-5");
+        });
+
+        // Blue skin
+        $('.s-skin-1').click(function() {
+            $("body").removeClass("skin-2");
+            $("body").removeClass("skin-3");
+            $("body").removeClass("skin-4");
+            $("body").removeClass("skin-5");
+            $("body").addClass("skin-1");
+        });
+
+        // Inspinia ultra skin
+        $('.s-skin-2').click(function() {
+            $("body").removeClass("skin-1");
+            $("body").removeClass("skin-3");
+            $("body").removeClass("skin-4");
+            $("body").removeClass("skin-5");
+            $("body").addClass("skin-2");
+        });
+
+        // Yellow skin
+        $('.s-skin-3').click(function() {
+            $("body").removeClass("skin-1");
+            $("body").removeClass("skin-2");
+            $("body").removeClass("skin-4");
+            $("body").removeClass("skin-5");
+            $("body").addClass("skin-3");
+        });
+
+        // Dark skin
+        $('.s-skin-5').click(function() {
+            $("body").removeClass("skin-1");
+            $("body").removeClass("skin-2");
+            $("body").removeClass("skin-3");
+            $("body").removeClass("skin-4");
+            $("body").addClass("skin-5");
+        });
+
+        // Light skin
+        $('.s-skin-4').click(function() {
+            $("body").removeClass("skin-1");
+            $("body").removeClass("skin-2");
+            $("body").removeClass("skin-3");
+            $("body").removeClass("skin-5");
+            $("body").addClass("skin-4");
+        });
+
+
+        if (localStorageSupport) {
+            var collapse = localStorage.getItem("collapse_menu");
+            var fixedsidebar = localStorage.getItem("fixedsidebar");
+            var fixednavbar = localStorage.getItem("fixednavbar");
+            var fixednavbar2 = localStorage.getItem("fixednavbar2");
+            var boxedlayout = localStorage.getItem("boxedlayout");
+            var fixedfooter = localStorage.getItem("fixedfooter");
+
+            if (collapse == 'on') {
+                $('#collapsemenu').prop('checked', 'checked')
+            }
+            if (fixedsidebar == 'on') {
+                $('#fixedsidebar').prop('checked', 'checked')
+            }
+            if (fixednavbar == 'on') {
+                $('#fixednavbar').prop('checked', 'checked')
+            }
+            if (fixednavbar2 == 'on') {
+                $('#fixednavbar2').prop('checked', 'checked')
+            }
+            if (boxedlayout == 'on') {
+                $('#boxedlayout').prop('checked', 'checked')
+            }
+            if (fixedfooter == 'on') {
+                $('#fixedfooter').prop('checked', 'checked')
+            }
+        }
     </script>
 </body>
 
