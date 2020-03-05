@@ -11960,7 +11960,9 @@ body.skin-5 ul.nav.navbar-top-links.navbar-right li span a {
 }
 
 .skin-5 .footer {
-    color: #676a6c;
+    color: #bebebe;
+    background-color: #353535;
+    border-top: 1px solid #a5a5a5;
 }
 
 .skin-5 .toast.toast.toast-bootstrap {
@@ -11976,7 +11978,7 @@ body.skin-5 ul.nav.navbar-top-links.navbar-right li span a {
 }
 
 .skin-5 .chat-discussion {
-    background-color: silver;
+    background-color: #555555;
 }
 
 .skin-5 .input-msg-write input {
@@ -12105,6 +12107,10 @@ body.skin-5 #wrapper {
     padding: 0 30px 25px 30px;
 }
 
+.skin-5 label.btn {
+    color: white;
+}
+
 .skin-5 .ibox-title {
     background: #383838;
     border: none;
@@ -12117,12 +12123,12 @@ body.skin-5 #wrapper {
 }
 
 .skin-5 #page-wrapper {
-    background: #383838;
-    background: -webkit-radial-gradient(center, ellipse cover, #f6f6f6 20%, #d5d5d5 100%);
-    background: -o-radial-gradient(center, ellipse cover, #f6f6f6 20%, #d5d5d5 100%);
-    background: -ms-radial-gradient(center, ellipse cover, #f6f6f6 20%, #d5d5d5 100%);
-    background: radial-gradient(ellipse at center, #f6f6f6 20%, #d5d5d5 100%);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f6f6f6, endColorstr=#d5d5d5)";
+    background: #464646;
+    /* background: -webkit-radial-gradient(center, ellipse cover, #f6f6f6 20%, #d5d5d5 100%); */
+    /* background: -o-radial-gradient(center, ellipse cover, #f6f6f6 20%, #d5d5d5 100%); */
+    /* background: -ms-radial-gradient(center, ellipse cover, #f6f6f6 20%, #d5d5d5 100%); */
+    /* background: radial-gradient(ellipse at center, #f6f6f6 20%, #d5d5d5 100%); */
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f6f6f6, endColorstr=#d5d5d5)"; */
 }
 
 .skin-5 .ibox-title,
