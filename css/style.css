@@ -11965,13 +11965,10 @@ body.skin-5 ul.nav.navbar-top-links.navbar-right li span a {
     border-top: 1px solid #a5a5a5;
 }
 
-<<<<<<< HEAD
 .skin-5 .list-group-item {
     border-top: 1px solid #686868;
 }
 
-=======
->>>>>>> master
 .skin-5 .toast.toast.toast-bootstrap {
     color: #676a6c;
 }
@@ -11980,7 +11977,6 @@ body.skin-5 ul.nav.navbar-top-links.navbar-right li span a {
     color: white !important;
 }
 
-<<<<<<< HEAD
 .skin-5 .chat-discussion .message,
 .skin-5 .chat-discussion img {
     background-color: #535353;
@@ -11989,14 +11985,6 @@ body.skin-5 ul.nav.navbar-top-links.navbar-right li span a {
 
 .skin-5 .chat-discussion {
     background-color: #333333;
-=======
-.skin-5 .chat-discussion .message {
-    background-color: #535353;
-}
-
-.skin-5 .chat-discussion {
-    background-color: #555555;
->>>>>>> master
 }
 
 .skin-5 .input-msg-write input {
