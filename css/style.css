@@ -43,7 +43,7 @@
 }
 
 a .widget.style1:hover {
-    opacity: 0.7;
+    opacity: 0.95;
 }
 
 ul li a.sub-menu-item {
@@ -11294,7 +11294,7 @@ body.rtls.top-navigation .footer.fixed {
 
 .ultra-skin {
     font-weight: 600;
-    background: url("patterns/header-profile-skin-2.png") repeat scroll 0 0;
+    background: url("patterns/header-profile-skin-2.png") repeat scroll 0 100%;
 }
 
 .ultra-skin:hover {
@@ -11303,7 +11303,7 @@ body.rtls.top-navigation .footer.fixed {
 
 .dark-skin {
     font-weight: 600;
-    background: black;
+    background: url("patterns/3d-low-poly-dark-background.jpg") repeat scroll 0 100%;
 }
 
 .skin-5 .theme-config {
