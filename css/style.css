@@ -1396,7 +1396,7 @@ h5 {
 }
 
 .nav-header {
-    padding: 33px 25px;
+    padding: 35px 25px;
     background-color: #2f4050;
     background-image: url("patterns/header-profile.png");
 }
@@ -2248,7 +2248,6 @@ button:focus {
 .btn-default.active:hover,
 .btn-default.active:focus {
     color: inherit;
-    border: 1px solid #d2d2d2;
 }
 
 .btn-default:active,
@@ -3460,7 +3459,7 @@ a.btn:hover {
 }
 
 a.widget.style1.btn-default:hover {
-    color: gray;
+    opacity: 0.8;
 }
 
 a.widget.style1 {
@@ -6352,6 +6351,10 @@ table.table-mail tr td {
 .ibox-heading h3 {
     font-weight: 200;
     font-size: 24px;
+}
+
+.ibox-content.ibox-heading>a:hover {
+    opacity: 0.8;
 }
 
 .ibox-title h5 {
@@ -11810,20 +11813,18 @@ body.skin-4 {
 }
 
 .skin-4 .nav-header .font-bold {
-    font-size: 12px;
     font-weight: 700;
     color: #384d6c;
 }
 
 .skin-4 .nav-header .text-muted {
     color: #8291a3 !important;
-    font-size: 12px;
 }
 
 .skin-4 .nav-header {
     background-color: #f9f9f9;
     background-image: none;
-    padding: 20px 25px 20px 25px;
+    padding: 30px 25px 30px 25px;
 }
 
 .skin-4 .profile-element img {
@@ -11956,6 +11957,30 @@ body.skin-5 {
 
 body.skin-5 ul.nav.navbar-top-links.navbar-right li span a {
     color: #e74258 !important;
+}
+
+.skin-5 .footer {
+    color: #676a6c;
+}
+
+.skin-5 .toast.toast.toast-bootstrap {
+    color: #676a6c;
+}
+
+.skin-5 .ibox-content.ibox-heading span {
+    color: white !important;
+}
+
+.skin-5 .chat-discussion .message {
+    background-color: #535353;
+}
+
+.skin-5 .chat-discussion {
+    background-color: silver;
+}
+
+.skin-5 .input-msg-write input {
+    color: white !important;
 }
 
 .skin-5 .nav.navbar-top-links.navbar-right a:hover {
