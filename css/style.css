@@ -26,6 +26,14 @@
     display: block;
 }
 
+.pop-chat2 {
+    display: none;
+}
+
+.pop-chat2.active {
+    display: block;
+}
+
 .body-wrap {
     height: fit-content;
 }
@@ -38,7 +46,67 @@
     margin-top: 5%;
 }
 
-.job-btn {
+#conversation1 .job-btn {
+    float: right;
+}
+
+#conversation1 .job-option {
+    padding: 0px 0px 0px 0px;
+}
+
+#conversation1 .job-option a {
+    height: 40px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#conversation1 .job-spam a {
+    height: 40px;
+    width: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 60px;
+}
+
+#conversation2 .job-btn {
+    float: right;
+}
+
+#conversation2 .job-option {
+    padding: 0px 15px 0px 0px;
+}
+
+#conversation2 .job-option a {
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#conversation2 .job-option1 {
+    padding: 0px 15px 0px 0px;
+}
+
+#conversation2 .job-option1 a {
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#conversation2 .job-spam {
+    padding: 0px 50px 0px 0px;
+    margin-right: 0px;
+}
+
+#conversation2 .job-spam a {
+    height: 40px;
+    width: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 40px;
+}
+
+#conversation3 .job-btn {
     float: right;
 }
 
@@ -12851,17 +12919,6 @@ body.md-skin {
 @media (max-width: 1600px) {
     .welcome-message {
         display: none;
-    }
-    .job-btn a {
-        display: flex;
-        float: left;
-        height: 40px;
-        width: 30px;
-        font-size: 8px;
-        align-items: center;
-        justify-content: center;
-        margin-left: 1px;
-        margin-right: 1px;
     }
     .row.border-bottom.white-bg.dashboard-header .col-lg-2 div.widget {
         height: 100px;
