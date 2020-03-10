@@ -250,7 +250,7 @@
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>New messages</span>
-                                        <h2 class="font-bold">10</h2>
+                                        <h2 class="font-bold" id="ranNum"></h2>
                                     </div>
                                 </div>
                             </div>
@@ -267,7 +267,7 @@
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>Pending</span>
-                                        <h2 class="font-bold">5</h2>
+                                        <h2 class="font-bold" id="ranNum1">5</h2>
                                     </div>
                                 </div>
                             </div>
@@ -284,7 +284,7 @@
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>closed</span>
-                                        <h2 class="font-bold">2</h2>
+                                        <h2 class="font-bold" id="ranNum2"></h2>
                                     </div>
                                 </div>
                             </div>
@@ -301,7 +301,7 @@
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>inbox</span>
-                                        <h2 class="font-bold">2</h2>
+                                        <h2 class="font-bold" id="ranNum3"></h2>
                                     </div>
                                 </div>
                             </div>
@@ -318,7 +318,7 @@
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>user post</span>
-                                        <h2 class="font-bold">1</h2>
+                                        <h2 class="font-bold" id="ranNum4"></h2>
                                     </div>
                                 </div>
                             </div>
@@ -335,7 +335,7 @@
                                     </div>
                                     <div class="col-8 text-right box-btn">
                                         <span>page post</span>
-                                        <h2 class="font-bold">1</h2>
+                                        <h2 class="font-bold" id="ranNum5"></h2>
                                     </div>
                                 </div>
                             </div>
@@ -1187,6 +1187,22 @@
     <script src="js/plugins/rickshaw/rickshaw.min.js"></script>
 
     <script type="text/javascript" src="js/emojionearea.js"></script>
+
+    <!-- Number Random -->
+    <script>
+        document.getElementById("ranNum").innerHTML =
+            Math.floor(Math.random() * 101);
+        document.getElementById("ranNum1").innerHTML =
+            Math.floor(Math.random() * 11);
+        document.getElementById("ranNum2").innerHTML =
+            Math.floor(Math.random() * 11);
+        document.getElementById("ranNum3").innerHTML =
+            Math.floor(Math.random() * 11);
+        document.getElementById("ranNum4").innerHTML =
+            Math.floor(Math.random() * 11);
+        document.getElementById("ranNum5").innerHTML =
+            Math.floor(Math.random() * 11);
+    </script>
 
     <!-- Emoji -->
     <script>
