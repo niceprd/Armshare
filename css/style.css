@@ -11547,6 +11547,14 @@ body.skin-1 {
     background: transparent;
 }
 
+.skin-1 .ibox-content.no-padding .list-group-item a {
+    color: #0e9aef !important;
+}
+
+.skin-1 .ibox-content.ibox-heading a>span {
+    color: #0e9aef !important;
+}
+
 
 /*
  *
@@ -11754,6 +11762,14 @@ body.skin-2 #wrapper {
  *   NAME - Yellow/purple
  *
 */
+
+.skin-3 .ibox-content.no-padding .list-group-item a {
+    color: #ecba52 !important;
+}
+
+.skin-3 .ibox-content.ibox-heading a>span {
+    color: #ecba52 !important;
+}
 
 body.skin-3 ul.nav.navbar-top-links.navbar-right li span a {
     color: #ecba52 !important;
