@@ -83,12 +83,18 @@ ul li a.sub-menu-item:hover {
     justify-content: center;
 }
 
+.uploadImg {
+    position: relative;
+    top: -35%;
+    font-size: 15px;
+}
+
 .input-msg-write input {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    background: #00000000 none repeat scroll 0 0;
     border: none;
     font-size: 15px;
     min-height: 48px;
-    width: 80%;
+    width: 85%;
     position: relative;
     margin-left: 1.5%;
 }
@@ -7276,7 +7282,7 @@ body.modal-open {
 
 _::-webkit-full-page-media,
 _:future,
-:root body.modal-open .wrapper-content.animated {
+ :root body.modal-open .wrapper-content.animated {
     -webkit-animation: none;
     -ms-animation-nam: none;
     animation: none;
@@ -12082,6 +12088,16 @@ body.skin-5 {
 
 body.skin-5 ul.nav.navbar-top-links.navbar-right li span a {
     color: #e74258 !important;
+}
+
+.skin-5 .emojionearea .emojionearea-editor {
+    color: #d8d8d8;
+}
+
+.skin-5 .emojionearea.emojionearea-inline>.emojionearea-button {
+    top: 25%;
+    background-color: #ffffff;
+    border-radius: 100%;
 }
 
 .skin-5 .footer {

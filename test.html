@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/emojionearea.min.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="text" id="emoji" cols="100" rows="5"></textarea>
+
+    <h2 id="demo"><a href="#demo">Demo</a></h2>
+
+    <div class="clearfix">
+        <div class="row">
+            <div class="col-6">
+                <p>From:</p>
+                <textarea id="demo1">
+      </textarea>
+            </div>
+            <div class="col-6">
+                <p>To:</p>
+                <div id="container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/emojionearea.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#emoji").emojioneArea({
+                pickerPosition: "bottom",
+                filtersPosition: "bottom",
+                tonesStyle: "bullet"
+            });
+        })
+    </script>
+
+    <!-- <script type="text/javascript">
+        $(document).ready(function () {
+            $("#demo1").emojioneArea({
+                container: "#container",
+                hideSource: false,
+                useSprite: false
+            });
+        });
+    </script> -->
+</body>
+
+</html>

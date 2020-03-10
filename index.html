@@ -20,6 +20,9 @@
 
     <link href="css/plugins/bootstrapSocial/bootstrap-social.css" rel="stylesheet">
 
+    <!-- EmojioneArea -->
+    <link rel="stylesheet" href="css/emojionearea.min.css">
+
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -437,11 +440,8 @@
                                             <span class="text-muted">Username</span>
                                         </a>
                                         <div class="job-btn">
-                                            <a class="btn btn-warning" role="button" href="#">
-                                                Assess case
-                                            </a>
-                                            <a class="btn btn-info" role="button" href="#">
-                                                Close case
+                                            <a class="btn btn-success" role="button" href="#">
+                                                Apply case
                                             </a>
                                             <a class="btn btn-danger" role="button" href="#">
                                                 <i class="fa fa-trash"></i>
@@ -538,20 +538,14 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-12">
-                                                            <!-- <div class="chat-message-form"> -->
-                                                            <!-- <div class="form-group">
-                                                                    <input type="text" class="form-control message-input" id="write-msg" placeholder="Type a message" />
-                                                                </div> -->
-                                                            <label class="btn btn-mute" style="cursor: pointer;">
-                                                                    <i class="fa fa-paperclip"></i>
-                                                                    <input type="file" hidden>
-                                                                </label>
+                                                            <label class="btn btn-mute uploadImg" style="cursor: pointer;">
+                                                                <i class="fa fa-paperclip"></i>
+                                                                <input type="file" accept="image/*" hidden>
+                                                            </label>
                                                             <span class="input-msg-write">
-                                                                    <input type="text" class="write-msg" id="write-msg" placeholder="Type a message" />
-                                                                    <button class="msg-send-btn" type="button"><i class="fa fa-send"
-                                                                            aria-hidden="true"></i></button>
-                                                                </span>
-                                                            <!-- </div> -->
+                                                                <input type="text" class="write-msg" id="write-msg" placeholder="Type a message"/>
+                                                                <button class="msg-send-btn" type="submit"><i class="fa fa-send" aria-hidden="true"></i></button>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -684,27 +678,19 @@
                                                                         </span>
                                                                     </div>
                                                                 </div>
-
                                                             </div>
-
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-12">
-                                                            <!-- <div class="chat-message-form"> -->
-                                                            <!-- <div class="form-group">
-                                                                    <input type="text" class="form-control message-input" id="write-msg" placeholder="Type a message" />
-                                                                </div> -->
-                                                            <label class="btn btn-mute" style="cursor: pointer;">
-                                                                    <i class="fa fa-paperclip"></i>
-                                                                    <input type="file" hidden>
-                                                                </label>
+                                                            <label class="btn btn-mute uploadImg" style="cursor: pointer;">
+                                                                <i class="fa fa-paperclip"></i>
+                                                                <input type="file" accept="image/*" hidden>
+                                                            </label>
                                                             <span class="input-msg-write">
-                                                                    <input type="text" class="write-msg" id="write-msg" placeholder="Type a message" />
-                                                                    <button class="msg-send-btn" type="button"><i class="fa fa-send"
-                                                                            aria-hidden="true"></i></button>
-                                                                </span>
-                                                            <!-- </div> -->
+                                                                <input type="text" class="write-msg" id="write-msg1" />
+                                                                <button class="msg-send-btn" type="submit"><i class="fa fa-send" aria-hidden="true"></i></button>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -877,12 +863,12 @@
             <div class="skin-settings">
                 <div class="title">Configuration <br>
                     <small style="text-transform: none;font-weight: 400">
-                    Config box designed for demo purpose. All options available via code.
-                </small></div>
+                        Config box designed for demo purpose. All options available via code.
+                    </small></div>
                 <div class="settings-item">
                     <span>
-                            Collapse menu
-                        </span>
+                        Collapse menu
+                    </span>
 
                     <div class="switch">
                         <div class="onoffswitch">
@@ -896,8 +882,8 @@
                 </div>
                 <div class="settings-item">
                     <span>
-                            Fixed sidebar
-                        </span>
+                        Fixed sidebar
+                    </span>
 
                     <div class="switch">
                         <div class="onoffswitch">
@@ -911,8 +897,8 @@
                 </div>
                 <div class="settings-item">
                     <span>
-                            Top navbar
-                        </span>
+                        Top navbar
+                    </span>
 
                     <div class="switch">
                         <div class="onoffswitch">
@@ -926,10 +912,10 @@
                 </div>
                 <div class="settings-item">
                     <span>
-                            Top navbar v.2
-                            <br>
-                            <small>*Primary layout</small>
-                        </span>
+                        Top navbar v.2
+                        <br>
+                        <small>*Primary layout</small>
+                    </span>
 
                     <div class="switch">
                         <div class="onoffswitch">
@@ -943,8 +929,8 @@
                 </div>
                 <div class="settings-item">
                     <span>
-                            Boxed layout
-                        </span>
+                        Boxed layout
+                    </span>
 
                     <div class="switch">
                         <div class="onoffswitch">
@@ -958,8 +944,8 @@
                 </div>
                 <div class="settings-item">
                     <span>
-                            Fixed footer
-                        </span>
+                        Fixed footer
+                    </span>
 
                     <div class="switch">
                         <div class="onoffswitch">
@@ -975,45 +961,45 @@
                 <div class="title">Skins</div>
                 <div class="settings-item default-skin">
                     <span class="skin-name">
-                             <a href="#" class="s-skin-0">
-                                 Default
-                             </a>
-                        </span>
+                        <a href="#" class="s-skin-0">
+                            Default
+                        </a>
+                    </span>
                 </div>
                 <div class="settings-item blue-skin">
                     <span class="skin-name">
-                            <a href="#" class="s-skin-1">
-                                Blue light
-                            </a>
-                        </span>
+                        <a href="#" class="s-skin-1">
+                            Blue light
+                        </a>
+                    </span>
                 </div>
                 <div class="settings-item ultra-skin">
                     <span class="skin-name">
-                            <a href="#" class="s-skin-2">
-                                Ultra skin
-                            </a>
-                        </span>
+                        <a href="#" class="s-skin-2">
+                            Ultra skin
+                        </a>
+                    </span>
                 </div>
                 <div class="settings-item yellow-skin">
                     <span class="skin-name">
-                            <a href="#" class="s-skin-3">
-                                Yellow Skin
-                            </a>
-                        </span>
+                        <a href="#" class="s-skin-3">
+                            Yellow Skin
+                        </a>
+                    </span>
                 </div>
                 <div class="settings-item dark-skin">
                     <span class="skin-name">
-                            <a href="#" class="s-skin-5">
-                                Dark Skin
-                            </a>
-                        </span>
+                        <a href="#" class="s-skin-5">
+                            Dark Skin
+                        </a>
+                    </span>
                 </div>
                 <div class="settings-item light-skin">
                     <span class="skin-name">
-                            <a href="#" class="s-skin-4">
-                                Light Skin
-                            </a>
-                        </span>
+                        <a href="#" class="s-skin-4">
+                            Light Skin
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -1062,6 +1048,30 @@
     <!-- Rickshaw -->
     <script src="js/plugins/rickshaw/vendor/d3.v3.js"></script>
     <script src="js/plugins/rickshaw/rickshaw.min.js"></script>
+
+    <script type="text/javascript" src="js/emojionearea.js"></script>
+
+    <!-- Emoji -->
+    <script>
+        $(document).ready(function() {
+            $("#write-msg").emojioneArea({
+                pickerPosition: "top",
+                filtersPosition: "bottom",
+                tonesStyle: "bullet",
+                placeholder: "Type a message",
+                searchPlaceholder: "Search...",
+            });
+        })
+        $(document).ready(function() {
+            $("#write-msg1").emojioneArea({
+                pickerPosition: "top",
+                filtersPosition: "bottom",
+                tonesStyle: "bullet",
+                placeholder: "Type a message",
+                searchPlaceholder: "Search..."
+            });
+        })
+    </script>
 
     <!-- Animation -->
     <script>
