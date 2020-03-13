@@ -15,9 +15,6 @@
     <!-- Toastr style -->
     <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
 
-    <!-- Gritter -->
-    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
-
     <link href="css/plugins/bootstrapSocial/bootstrap-social.css" rel="stylesheet">
 
     <!-- EmojioneArea -->
@@ -25,6 +22,10 @@
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Graph -->
+    <link href="css/plugins/c3/c3.min.css" rel="stylesheet">
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
 
 </head>
 
@@ -240,7 +241,7 @@
             <div class="wrapper wrapper-content animated fadeInRight">
                 <div class="row border-bottom white-bg dashboard-header">
                     <div class="col-lg-2">
-                        <a role="button" href="#" class="new-msg dim" data-animation="tada">
+                        <a role="button" href="chatbox.html" class="new-msg dim" data-animation="tada">
                             <div class="widget style1 red-bg">
                                 <div class="row">
                                     <div class="col-4 text-center">
@@ -257,7 +258,7 @@
                         </a>
                     </div>
                     <div class="col-lg-2">
-                        <a role="button" href="#" class="pend-msg dim" data-animation="pulse">
+                        <a role="button" href="chatbox.html" class="pend-msg dim" data-animation="pulse">
                             <div class="widget style1 yellow-bg">
                                 <div class="row">
                                     <div class="col-4 text-center">
@@ -274,7 +275,7 @@
                         </a>
                     </div>
                     <div class="col-lg-2">
-                        <a role="button" href="#" class="cls-msg dim" data-animation="pulse">
+                        <a role="button" href="chatbox.html" class="cls-msg dim" data-animation="pulse">
                             <div class="widget style1 btn-primary">
                                 <div class="row">
                                     <div class="col-4 text-center">
@@ -291,7 +292,7 @@
                         </a>
                     </div>
                     <div class="col-lg-2">
-                        <a role="button" href="#" class="inb dim" data-animation="swing">
+                        <a role="button" href="chatbox.html" class="inb dim" data-animation="swing">
                             <div class="widget style1 btn-default">
                                 <div class="row">
                                     <div class="col-4 text-center">
@@ -308,7 +309,7 @@
                         </a>
                     </div>
                     <div class="col-lg-2">
-                        <a role="button" href="#" class="upost dim" data-animation="pulse">
+                        <a role="button" href="chatbox.html" class="upost dim" data-animation="pulse">
                             <div class="widget style1 btn-default">
                                 <div class="row">
                                     <div class="col-4 text-center">
@@ -325,7 +326,7 @@
                         </a>
                     </div>
                     <div class="col-lg-2">
-                        <a role="button" href="#" class="ppost dim" data-animation="pulse">
+                        <a role="button" href="chatbox.html" class="ppost dim" data-animation="pulse">
                             <div class="widget style1 btn-default">
                                 <div class="row">
                                     <div class="col-4 text-center">
@@ -348,13 +349,17 @@
                             <div class="col-lg-4">
                                 <div class="ibox ">
                                     <div class="ibox-title">
-                                        <h5>Pie </h5>
-
+                                        <h5>Social Graph Report</h5>
                                     </div>
                                     <div class="ibox-content">
                                         <div>
                                             <canvas id="doughnutChart" height="140"></canvas>
                                         </div>
+                                        <div id="morris-donut-chart"></div>
+                                        <div>
+                                            <div id="stocked"></div>
+                                        </div>
+                                        <div id="morris-bar-chart"></div>
                                     </div>
                                 </div>
                             </div>
@@ -363,11 +368,10 @@
                                     <div class="ibox-title">
                                         <h5>Your daily feed</h5>
                                         <div class="ibox-tools">
-                                            <span class="label label-warning-light float-right">10 Messages</span>
+                                            <span class="label label-warning-light float-right"><span id="ranNo"></span> messages</span>
                                         </div>
                                     </div>
                                     <div class="ibox-content">
-
                                         <div>
                                             <div class="feed-activity-list">
 
@@ -379,10 +383,8 @@
                                                         <small class="float-right">5m ago</small>
                                                         <strong>Monica Smith</strong> posted a new blog. <br>
                                                         <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
-
                                                     </div>
                                                 </div>
-
                                                 <div class="feed-element">
                                                     <a class="float-left" href="profile.html">
                                                         <img alt="image" class="rounded-circle" src="img/a2.jpg">
@@ -408,7 +410,7 @@
                                                         <img alt="image" class="rounded-circle" src="img/a4.jpg">
                                                     </a>
                                                     <div class="media-body ">
-                                                        <small class="float-right text-navy">5h ago</small>
+                                                        <small class="float-right">5h ago</small>
                                                         <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
                                                         <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
                                                         <div class="actions">
@@ -461,127 +463,75 @@
 
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="col-lg-4">
-                                <div class="ibox ">
+                                <div class="ibox">
                                     <div class="ibox-title">
-                                        <h5>Alpha project</h5>
+                                        <h5>Progress Report</h5>
                                         <div class="ibox-tools">
-                                            <a class="collapse-link" href="">
+                                            <a class="collapse-link">
                                                 <i class="fa fa-chevron-up"></i>
                                             </a>
-                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                <i class="fa fa-wrench"></i>
-                                            </a>
-                                            <ul class="dropdown-menu dropdown-user">
-                                                <li><a href="#" class="dropdown-item">Config option 1</a>
-                                                </li>
-                                                <li><a href="#" class="dropdown-item">Config option 2</a>
-                                                </li>
-                                            </ul>
-                                            <a class="close-link" href="">
+                                            <a class="close-link">
                                                 <i class="fa fa-times"></i>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="ibox-content ibox-heading">
-                                        <h3>You have meeting today!</h3>
-                                        <small><i class="fa fa-map-marker"></i> Meeting is on 6:00am. Check your schedule to see detail.</small>
-                                    </div>
-                                    <div class="ibox-content inspinia-timeline">
-
-                                        <div class="timeline-item">
-                                            <div class="row">
-                                                <div class="col-4 date">
-                                                    <i class="fa fa-briefcase"></i> 6:00 am
-                                                    <br/>
-                                                    <small class="text-navy">2 hour ago</small>
-                                                </div>
-                                                <div class="col content no-top-border">
-                                                    <p class="m-b-xs"><strong>Meeting</strong></p>
-
-                                                    <p>Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the sale.
-                                                    </p>
-
-                                                    <p><span data-diameter="40" class="updating-chart">5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,4,7,3,2,9,8,7,4,5,1,2,9,5,4,7,2,7,7,3,5,2</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="row">
-                                                <div class="col-4 date">
-                                                    <i class="fa fa-file"></i> 7:00 am
-                                                    <br/>
-                                                    <small class="text-navy">3 hour ago</small>
-                                                </div>
-                                                <div class="col content">
-                                                    <p class="m-b-xs"><strong>Send documents to Mike</strong></p>
-                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="row">
-                                                <div class="col-4 date">
-                                                    <i class="fa fa-coffee"></i> 8:00 am
-                                                    <br/>
-                                                </div>
-                                                <div class="col content">
-                                                    <p class="m-b-xs"><strong>Coffee Break</strong></p>
-                                                    <p>
-                                                        Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="row">
-                                                <div class="col-4 date">
-                                                    <i class="fa fa-phone"></i> 11:00 am
-                                                    <br/>
-                                                    <small class="text-navy">21 hour ago</small>
-                                                </div>
-                                                <div class="col content">
-                                                    <p class="m-b-xs"><strong>Phone with Jeronimo</strong></p>
-                                                    <p>
-                                                        Lorem Ipsum has been the industry's standard dummy text ever since.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="row">
-                                                <div class="col-4 date">
-                                                    <i class="fa fa-user-md"></i> 09:00 pm
-                                                    <br/>
-                                                    <small>21 hour ago</small>
-                                                </div>
-                                                <div class="col content">
-                                                    <p class="m-b-xs"><strong>Go to the doctor dr Smith</strong></p>
-                                                    <p>
-                                                        Find some issue and go to doctor.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="row">
-                                                <div class="col-4 date">
-                                                    <i class="fa fa-comments"></i> 12:50 pm
-                                                    <br/>
-                                                    <small class="text-navy">48 hour ago</small>
-                                                </div>
-                                                <div class="col content">
-                                                    <p class="m-b-xs"><strong>Chat with Monica and Sandra</strong></p>
-                                                    <p>
-                                                        Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                    <div class="ibox-content table-responsive">
+                                        <table class="table table-hover no-margins">
+                                            <thead>
+                                                <tr>
+                                                    <th>Status</th>
+                                                    <th>Date</th>
+                                                    <th>User</th>
+                                                    <th>Account</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="label label-warning">Pending</span></td>
+                                                    <td><i class="fa fa-clock-o"></i> 11:20pm</td>
+                                                    <td>Samantha</td>
+                                                    <td>Facebook</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="label label-danger">Canceled</span> </td>
+                                                    <td><i class="fa fa-clock-o"></i> 10:40am</td>
+                                                    <td>Monica</td>
+                                                    <td>Instagram</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="label label-warning">Pending</span></td>
+                                                    <td><i class="fa fa-clock-o"></i> 01:30pm</td>
+                                                    <td>John</td>
+                                                    <td>Facebook</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="label label-warning">Pending</span></td>
+                                                    <td><i class="fa fa-clock-o"></i> 02:20pm</td>
+                                                    <td>Agnes</td>
+                                                    <td>Twitter</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="label label-warning">Pending</span></td>
+                                                    <td><i class="fa fa-clock-o"></i> 09:40pm</td>
+                                                    <td>Janet</td>
+                                                    <td>Instagram</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="label label-primary">Completed</span> </td>
+                                                    <td><i class="fa fa-clock-o"></i> 04:10am</td>
+                                                    <td>Amelia</td>
+                                                    <td>Line</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="label label-primary">Completed</span></td>
+                                                    <td><i class="fa fa-clock-o"></i> 12:08am</td>
+                                                    <td>Damian</td>
+                                                    <td>Line</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -773,17 +723,6 @@
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <!-- Flot -->
-    <script src="js/plugins/flot/jquery.flot.js"></script>
-    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
-    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
-    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
-
-    <!-- Peity -->
-    <script src="js/plugins/peity/jquery.peity.min.js"></script>
-    <script src="js/demo/peity-demo.js"></script>
-
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
@@ -791,42 +730,26 @@
     <!-- jQuery UI -->
     <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
 
-    <!-- GITTER -->
-    <script src="js/plugins/gritter/jquery.gritter.min.js"></script>
-
-    <!-- Sparkline -->
-    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
-
-    <!-- Sparkline demo data  -->
-    <script src="js/demo/sparkline-demo.js"></script>
-
     <!-- ChartJS-->
     <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
 
     <!-- Toastr -->
     <script src="js/plugins/toastr/toastr.min.js"></script>
 
-    <!-- Rickshaw -->
-    <script src="js/plugins/rickshaw/vendor/d3.v3.js"></script>
-    <script src="js/plugins/rickshaw/rickshaw.min.js"></script>
-
+    <!-- Emoji -->
     <script type="text/javascript" src="js/emojionearea.js"></script>
 
-    <!-- Number Random -->
-    <script>
-        document.getElementById("ranNum").innerHTML =
-            Math.floor(Math.random() * 101);
-        document.getElementById("ranNum1").innerHTML =
-            Math.floor(Math.random() * 11);
-        document.getElementById("ranNum2").innerHTML =
-            Math.floor(Math.random() * 11);
-        document.getElementById("ranNum3").innerHTML =
-            Math.floor(Math.random() * 11);
-        document.getElementById("ranNum4").innerHTML =
-            Math.floor(Math.random() * 11);
-        document.getElementById("ranNum5").innerHTML =
-            Math.floor(Math.random() * 11);
-    </script>
+    <!-- d3 and c3 charts -->
+    <script src="js/plugins/d3/d3.min.js"></script>
+    <script src="js/plugins/c3/c3.min.js"></script>
+
+    <!-- Morris -->
+    <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>
 
     <!-- Emoji -->
     <script>
@@ -920,126 +843,136 @@
 
             }, 2200);
 
-            var data1 = [
-                [0, 4],
-                [1, 8],
-                [2, 5],
-                [3, 10],
-                [4, 4],
-                [5, 16],
-                [6, 5],
-                [7, 11],
-                [8, 6],
-                [9, 11],
-                [10, 30],
-                [11, 10],
-                [12, 13],
-                [13, 4],
-                [14, 3],
-                [15, 3],
-                [16, 6]
-            ];
-            var data2 = [
-                [0, 1],
-                [1, 0],
-                [2, 2],
-                [3, 0],
-                [4, 1],
-                [5, 3],
-                [6, 1],
-                [7, 5],
-                [8, 2],
-                [9, 3],
-                [10, 2],
-                [11, 1],
-                [12, 0],
-                [13, 2],
-                [14, 8],
-                [15, 0],
-                [16, 0]
-            ];
-            // $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
-            //     data1, data2
-            // ], {
-            //     series: {
-            //         lines: {
-            //             show: false,
-            //             fill: true
-            //         },
-            //         splines: {
-            //             show: true,
-            //             tension: 0.4,
-            //             lineWidth: 1,
-            //             fill: 0.4
-            //         },
-            //         points: {
-            //             radius: 0,
-            //             show: true
-            //         },
-            //         shadowSize: 2
-            //     },
-            //     grid: {
-            //         hoverable: true,
-            //         clickable: true,
-            //         tickColor: "#d5d5d5",
-            //         borderWidth: 1,
-            //         color: '#d5d5d5'
-            //     },
-            //     colors: ["#1ab394", "#1C84C6"],
-            //     xaxis: {},
-            //     yaxis: {
-            //         ticks: 4
-            //     },
-            //     tooltip: false
+            var fb = Math.floor(Math.random() * 31 + 1);
+            var ig = Math.floor(Math.random() * 11 + 1);
+            var tw = Math.floor(Math.random() * 11 + 1);
+            var line = Math.floor(Math.random() * 11 + 1);
+
+            Morris.Bar({
+                element: 'morris-bar-chart',
+                data: [{
+                    y: 'January',
+                    a: (fb + ig + tw + line),
+                    b: fb,
+                    c: ig,
+                    d: tw,
+                    e: line,
+                }, {
+                    y: 'February',
+                    a: (fb + ig + tw + line) + 5,
+                    b: fb + 5,
+                    c: ig + 2,
+                    d: tw + 1,
+                    e: line + 1,
+                }, {
+                    y: 'March',
+                    a: (fb + ig + tw + line) + 10,
+                    b: fb + 10,
+                    c: ig + 4,
+                    d: tw + 2,
+                    e: line + 2,
+                }],
+                xkey: 'y',
+                ykeys: ['a', 'b', 'c', 'd', 'e'],
+                labels: ['All', 'Facebook', 'Instagram', 'Twitter', 'Line'],
+                hideHover: 'auto',
+                resize: true,
+                barColors: ['#666666', '#3b5898', '#DD2A7B', '#00acee', '#00b900']
+            });
+
+            c3.generate({
+                bindto: '#stocked',
+                data: {
+                    columns: [
+                        ['All', (fb + ig + tw + line), (fb + ig + tw + line + 5), (fb + ig + tw + line + 10)],
+                        ['Facebook', fb, fb + 5, fb + 10],
+                        ['Instagram', ig, ig + 2, ig + 4],
+                        ['Twitter', tw, tw + 1, tw + 2],
+                        ['Line', line, line + 1, line + 2],
+                    ],
+                    colors: {
+                        All: '#BABABA',
+                        Facebook: '#3b5898ce',
+                        Instagram: '#DD2A7Bce',
+                        Twitter: '#00aceece',
+                        Line: '#00b900ce',
+                    },
+                    type: 'bar',
+                    groups: [
+                        ['All', 'Facebook', 'Instagram', 'Twitter', 'Line']
+                    ]
+                }
+            });
+
+            var newmsg = document.getElementById("ranNum").innerHTML = document.getElementById("ranNo").innerHTML =
+                Math.floor(Math.random() * 31);
+            var pendmsg = document.getElementById("ranNum1").innerHTML =
+                Math.floor(Math.random() * 11);
+            var closemsg = document.getElementById("ranNum2").innerHTML =
+                Math.floor(Math.random() * 11);
+            var inbox = document.getElementById("ranNum3").innerHTML =
+                Math.floor(Math.random() * 11);
+            var userpost = document.getElementById("ranNum4").innerHTML =
+                Math.floor(Math.random() * 11);
+            var pagepost = document.getElementById("ranNum5").innerHTML =
+                Math.floor(Math.random() * 11);
+
+            // Morris.Donut({
+            //     element: 'morris-donut-chart',
+            //     data: [{
+            //         label: "Facebook",
+            //         value: fb
+            //     }, {
+            //         label: "Instagram",
+            //         value: ig
+            //     }, {
+            //         label: "Twitter",
+            //         value: tw
+            //     }],
+            //     resize: true,
+            //     colors: ['#3b5998', '#DD2A7B', '#00acee'],
+
             // });
 
-            // var doughnutData = {
-            //     labels: ["App", "Software", "Laptop"],
-            //     datasets: [{
-            //         data: [300, 50, 100],
-            //         backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
-            //     }]
-            // };
+            var doughnutData = {
+                labels: ["Facebook", "Instagram", "Twitter", "Line"],
+                datasets: [{
+                    data: [fb, ig, tw, line],
+                    backgroundColor: ["#3b5998", "#DD2A7B", "#00acee", "#00b900"]
+                }]
+            };
 
+            var doughnutOptions = {
+                responsive: true,
+            };
 
-            // var doughnutOptions = {
-            //     responsive: false,
-            //     legend: {
-            //         display: false
-            //     }
-            // };
+            var donutOp2 = {
+                responsive: true,
+                legend: {
+                    labels: {
+                        fontColor: 'gray'
+                    }
+                }
+            }
 
+            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+            new Chart(ctx4, {
+                type: 'doughnut',
+                data: doughnutData,
+                options: doughnutOptions,
+            });
 
-            // var ctx4 = document.getElementById("doughnutChart").getContext("2d");
-            // new Chart(ctx4, {
-            //     type: 'doughnut',
-            //     data: doughnutData,
-            //     options: doughnutOptions
-            // });
-
-            // var doughnutData = {
-            //     labels: ["App", "Software", "Laptop"],
-            //     datasets: [{
-            //         data: [70, 27, 85],
-            //         backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
-            //     }]
-            // };
-
-
-            // var doughnutOptions = {
-            //     responsive: false,
-            //     legend: {
-            //         display: false
-            //     }
-            // };
-
-
-            // var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
-            // new Chart(ctx4, {
-            //     type: 'doughnut',
-            //     data: doughnutData,
-            //     options: doughnutOptions
-            // });
+            $('.s-skin-5').click(function() {
+                let getBody = document.body.getElementsByClassName("skin-5");
+                if (getBody) {
+                    var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+                    new Chart(ctx4, {
+                        type: 'doughnut',
+                        data: doughnutData,
+                        options: donutOp2,
+                    });
+                }
+            })
 
         });
 

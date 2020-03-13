@@ -12361,6 +12361,51 @@ body.skin-5 #wrapper {
     border: none !important;
 }
 
+.skin-5 table {
+    color: white !important;
+}
+
+.skin-5 .btn.btn-xs.btn-white {
+    color: #4d4d4d;
+}
+
+.skin-5 .c3 text {
+    fill: white;
+    font-size: 12px;
+}
+
+.skin-5 .c3 path,
+.c3 g.tick>line {
+    stroke: gray !important;
+}
+
+.skin-5 g text {
+    fill: red;
+}
+
+.skin-5 .table-hover tbody>tr:hover {
+    color: silver;
+    background-color: #c72c41;
+}
+
+.skin-5 .c3-tooltip td {
+    color: black;
+}
+
+.skin-5 #morris-bar-chart text {
+    fill: #fff;
+}
+
+.skin-5 #morris-bar-chart path {
+    fill: none;
+    stroke: #777777;
+}
+
+
+/* .skin-5 canvas.chartjs-render-monitor#doughnutChart {
+    fill: red !important;
+} */
+
 .skin-5 #page-wrapper {
     background: #464646;
     /* background: -webkit-radial-gradient(center, ellipse cover, #f6f6f6 20%, #d5d5d5 100%); */
