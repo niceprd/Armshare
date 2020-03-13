@@ -344,25 +344,8 @@
                     </div>
                 </div>
                 <div class="row" style="padding-top: 20px;">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" id="sortable-view">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="ibox ">
-                                    <div class="ibox-title">
-                                        <h5>Social Graph Report</h5>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div>
-                                            <canvas id="doughnutChart" height="140"></canvas>
-                                        </div>
-                                        <div id="morris-donut-chart"></div>
-                                        <div>
-                                            <div id="stocked"></div>
-                                        </div>
-                                        <div id="morris-bar-chart"></div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-lg-4">
                                 <div class="ibox ">
                                     <div class="ibox-title">
@@ -456,11 +439,25 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i> Show More</button>
-
                                         </div>
-
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="ibox ">
+                                    <div class="ibox-title">
+                                        <h5>Social Graph Report</h5>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <div>
+                                            <canvas id="doughnutChart" height="140"></canvas>
+                                        </div>
+                                        <div id="morris-donut-chart"></div>
+                                        <div>
+                                            <div id="stocked"></div>
+                                        </div>
+                                        <div id="morris-bar-chart"></div>
                                     </div>
                                 </div>
                             </div>
@@ -750,6 +747,19 @@
     <!-- Morris -->
     <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
     <script src="js/plugins/morris/morris.js"></script>
+
+    <!-- Touch Punch - Touch Event Support for jQuery UI -->
+    <script src="js/plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // <!-- Enable portlets -->
+            WinMove();
+        });
+    </script>
 
     <!-- Emoji -->
     <script>
