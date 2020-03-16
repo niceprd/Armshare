@@ -224,23 +224,6 @@
                 </nav>
             </div>
 
-            <!-- Page Content  -->
-            <!-- <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-lg-10">
-                    <h2><a href="myAccount.html">My Account</a></h2>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="myAccount.html"><strong>   Profile</strong></a>
-                        </li>
-                        <li class="breadcrumb-item active">
-                            <a href="passChange.html">Password</a>
-                        </li>
-                    </ol>
-                </div>
-            </div> -->
             <div class="wrapper wrapper-content animated fadeInUp">
                 <div class="row">
                     <div class="col-lg-2">
@@ -289,44 +272,47 @@
                             <div class="ibox-content">
                                 <div class="row account">
                                     <div class="col profile">
-                                        <div class="profileImg">
-                                            <form class="form-group" action="#" method="GET" id="submitProfile">
+                                        <form class="form-group" action="#a" method="GET" id="submitProfile">
+                                            <div class="profileImg">
                                                 <div id="profile-container">
                                                     <img id="profileImage1">
                                                 </div>
                                                 <i class="fa fa-camera" id=profileImage></i>
-                                                <input id="imageUpload" type="file" accept="image/*" name="profile_photo" placeholder="Photo" required="" hidden>
-                                            </form>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-2 ml-5 mr-5 mt-3 mb-3">
-                                                <div class="profile-heading">Name</div>
+                                                <input id="imageUpload" type="file" accept="image/*" name="profile_photo" placeholder="Photo" hidden>
                                             </div>
-                                            <div class="col-3 mt-3 mb-3">
-                                                <div class="profile-content">Ekarat Co., Ltd.</div>
+                                            <div class="row">
+                                                <div class="col-2 ml-5 mr-5 mt-3 mb-3">
+                                                    <div class="profile-heading">Name</div>
+                                                </div>
+                                                <div class="col-3 mt-3 mb-3">
+                                                    <input type="text" class="profile-content" id="accountName" name="accountName" value="Ekarat Co., Ltd.">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-2 ml-5 mr-5 mt-3 mb-3">
-                                                <div class="profile-heading">Username</div>
+                                            <div class="row">
+                                                <div class="col-2 ml-5 mr-5 mt-3 mb-3">
+                                                    <div class="profile-heading">Username</div>
+                                                </div>
+                                                <div class="col-3 mt-3 mb-3">
+                                                    <input type="text" class="profile-content" id="userName" name="userName" value="aragent02">
+                                                </div>
                                             </div>
-                                            <div class="col-3 mt-3 mb-3">
-                                                <div class="profile-content">aragent02</div>
+                                            <div class="row">
+                                                <div class="col-2 ml-5 mr-5 mt-3 mb-3">
+                                                    <div class="profile-heading">Role</div>
+                                                </div>
+                                                <div class="col-3 mt-3 mb-3">
+                                                    <div class="profile-content">Administrator</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-2 ml-5 mr-5 mt-3 mb-3">
-                                                <div class="profile-heading">Role</div>
+                                            <div class="row">
+                                                <div class="col-1 mt-5 ml-5">
+                                                    <input type="button" class="btn btn-success btn-rounded submit" onclick="submitPF()" value="Save Change">
+                                                </div>
+                                                <div class="col-1 mt-5">
+                                                    <input type="reset" class="btn btn-warning btn-rounded submit" value="Cancel">
+                                                </div>
                                             </div>
-                                            <div class="col-3 mt-3 mb-3">
-                                                <div class="profile-content">Administrator</div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-3 mt-5 ml-5">
-                                                <input type="button" class="btn btn-primary submit" onclick="submit()" value="Save Change">
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                                 <div id="myModal" class="modal">
@@ -512,330 +498,20 @@
     <!-- Sweet alert -->
     <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the image and insert it inside the modal - use its "alt " text as a caption
-        var img = document.getElementById("profileImage1");
-        var modalImg = document.getElementById("img01");
-        img.onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-    </script>
+    <!-- Modal Image -->
+    <script src="js/functions/img_modal.js"></script>
 
     <!-- Profile picture -->
-    <script>
-        $("#profileImage").click(function(e) {
-            $("#imageUpload").click();
-        });
+    <script src="js/functions/image_upload.js"></script>
 
-        function fasterPreview(uploader) {
-            if (uploader.files && uploader.files[0]) {
-                $('#profileImage1').attr('src',
-                    window.URL.createObjectURL(uploader.files[0]));
-            }
-        }
+    <!-- Update profile confirmation -->
+    <script src="js/functions/confirm_update.js"></script>
 
-        $("#imageUpload").change(function() {
-            fasterPreview(this);
-        });
-    </script>
-    <script>
-        function submit() {
-            $(document).ready(function() {
-                $('.submit').click(function() {
-                    swal({
-                            title: "Are you sure?",
-                            text: "Your profile will be change!",
-                            type: "warning",
-                            showCancelButton: true,
-                            confirmButtonColor: "#DD6B55",
-                            confirmButtonText: "Yes, confirm change!",
-                            cancelButtonText: "No, cancel!",
-                            closeOnConfirm: false,
-                            closeOnCancel: false
-                        },
-                        function(isConfirm) {
-                            if (isConfirm) {
-                                swal("Completed", "Your profile updated", "success");
-                                document.getElementById("submitProfile").submit();
-                            } else {
-                                swal("Cancelled", "Your profile will not update.", "error");
-                            }
-                        });
-                });
+    <!-- Config box -->
+    <script src="js/functions/config_box.js"></script>
 
-
-            });
-        };
-    </script>
-    <script>
-        // Config box
-
-        // Enable/disable fixed top navbar
-        $('#fixednavbar').click(function() {
-            if ($('#fixednavbar').is(':checked')) {
-                $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
-                $("body").removeClass('boxed-layout');
-                $("body").addClass('fixed-nav');
-                $('#boxedlayout').prop('checked', false);
-
-                if (localStorageSupport) {
-                    localStorage.setItem("boxedlayout", 'off');
-                }
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixednavbar", 'on');
-                }
-            } else {
-                $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
-                $("body").removeClass('fixed-nav');
-                $("body").removeClass('fixed-nav-basic');
-                $('#fixednavbar2').prop('checked', false);
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixednavbar", 'off');
-                }
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixednavbar2", 'off');
-                }
-            }
-        });
-
-        // Enable/disable fixed top navbar
-        $('#fixednavbar2').click(function() {
-            if ($('#fixednavbar2').is(':checked')) {
-                $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
-                $("body").removeClass('boxed-layout');
-                $("body").addClass('fixed-nav').addClass('fixed-nav-basic');
-                $('#boxedlayout').prop('checked', false);
-
-                if (localStorageSupport) {
-                    localStorage.setItem("boxedlayout", 'off');
-                }
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixednavbar2", 'on');
-                }
-            } else {
-                $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
-                $("body").removeClass('fixed-nav').removeClass('fixed-nav-basic');
-                $('#fixednavbar').prop('checked', false);
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixednavbar2", 'off');
-                }
-                if (localStorageSupport) {
-                    localStorage.setItem("fixednavbar", 'off');
-                }
-            }
-        });
-
-        // Enable/disable fixed sidebar
-        $('#fixedsidebar').click(function() {
-            if ($('#fixedsidebar').is(':checked')) {
-                $("body").addClass('fixed-sidebar');
-                $('.sidebar-collapse').slimScroll({
-                    height: '100%',
-                    railOpacity: 0.9
-                });
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixedsidebar", 'on');
-                }
-            } else {
-                $('.sidebar-collapse').slimScroll({
-                    destroy: true
-                });
-                $('.sidebar-collapse').attr('style', '');
-                $("body").removeClass('fixed-sidebar');
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixedsidebar", 'off');
-                }
-            }
-        });
-
-        // Enable/disable collapse menu
-        $('#collapsemenu').click(function() {
-            if ($('#collapsemenu').is(':checked')) {
-                $("body").addClass('mini-navbar');
-                SmoothlyMenu();
-
-                if (localStorageSupport) {
-                    localStorage.setItem("collapse_menu", 'on');
-                }
-
-            } else {
-                $("body").removeClass('mini-navbar');
-                SmoothlyMenu();
-
-                if (localStorageSupport) {
-                    localStorage.setItem("collapse_menu", 'off');
-                }
-            }
-        });
-
-        // Enable/disable boxed layout
-        $('#boxedlayout').click(function() {
-            if ($('#boxedlayout').is(':checked')) {
-                $("body").addClass('boxed-layout');
-                $('#fixednavbar').prop('checked', false);
-                $('#fixednavbar2').prop('checked', false);
-                $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
-                $("body").removeClass('fixed-nav');
-                $("body").removeClass('fixed-nav-basic');
-                $(".footer").removeClass('fixed');
-                $('#fixedfooter').prop('checked', false);
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixednavbar", 'off');
-                }
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixednavbar2", 'off');
-                }
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixedfooter", 'off');
-                }
-
-
-                if (localStorageSupport) {
-                    localStorage.setItem("boxedlayout", 'on');
-                }
-            } else {
-                $("body").removeClass('boxed-layout');
-
-                if (localStorageSupport) {
-                    localStorage.setItem("boxedlayout", 'off');
-                }
-            }
-        });
-
-        // Enable/disable fixed footer
-        $('#fixedfooter').click(function() {
-            if ($('#fixedfooter').is(':checked')) {
-                $('#boxedlayout').prop('checked', false);
-                $("body").removeClass('boxed-layout');
-                $(".footer").addClass('fixed');
-
-                if (localStorageSupport) {
-                    localStorage.setItem("boxedlayout", 'off');
-                }
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixedfooter", 'on');
-                }
-            } else {
-                $(".footer").removeClass('fixed');
-
-                if (localStorageSupport) {
-                    localStorage.setItem("fixedfooter", 'off');
-                }
-            }
-        });
-
-        // SKIN Select
-        $('.spin-icon').click(function() {
-            $(".theme-config-box").toggleClass("show");
-        });
-
-        // Default skin
-        $('.s-skin-0').click(function() {
-            $("body").removeClass("skin-1");
-            $("body").removeClass("skin-2");
-            $("body").removeClass("skin-3");
-            $("body").removeClass("skin-4");
-            $("body").removeClass("skin-5");
-        });
-
-        // Blue skin
-        $('.s-skin-1').click(function() {
-            $("body").removeClass("skin-2");
-            $("body").removeClass("skin-3");
-            $("body").removeClass("skin-4");
-            $("body").removeClass("skin-5");
-            $("body").addClass("skin-1");
-        });
-
-        // Inspinia ultra skin
-        $('.s-skin-2').click(function() {
-            $("body").removeClass("skin-1");
-            $("body").removeClass("skin-3");
-            $("body").removeClass("skin-4");
-            $("body").removeClass("skin-5");
-            $("body").addClass("skin-2");
-        });
-
-        // Yellow skin
-        $('.s-skin-3').click(function() {
-            $("body").removeClass("skin-1");
-            $("body").removeClass("skin-2");
-            $("body").removeClass("skin-4");
-            $("body").removeClass("skin-5");
-            $("body").addClass("skin-3");
-        });
-
-        // Dark skin
-        $('.s-skin-5').click(function() {
-            $("body").removeClass("skin-1");
-            $("body").removeClass("skin-2");
-            $("body").removeClass("skin-3");
-            $("body").removeClass("skin-4");
-            $("body").addClass("skin-5");
-        });
-
-        // Light skin
-        $('.s-skin-4').click(function() {
-            $("body").removeClass("skin-1");
-            $("body").removeClass("skin-2");
-            $("body").removeClass("skin-3");
-            $("body").removeClass("skin-5");
-            $("body").addClass("skin-4");
-        });
-
-
-        if (localStorageSupport) {
-            var collapse = localStorage.getItem("collapse_menu");
-            var fixedsidebar = localStorage.getItem("fixedsidebar");
-            var fixednavbar = localStorage.getItem("fixednavbar");
-            var fixednavbar2 = localStorage.getItem("fixednavbar2");
-            var boxedlayout = localStorage.getItem("boxedlayout");
-            var fixedfooter = localStorage.getItem("fixedfooter");
-
-            if (collapse == 'on') {
-                $('#collapsemenu').prop('checked', 'checked')
-            }
-            if (fixedsidebar == 'on') {
-                $('#fixedsidebar').prop('checked', 'checked')
-            }
-            if (fixednavbar == 'on') {
-                $('#fixednavbar').prop('checked', 'checked')
-            }
-            if (fixednavbar2 == 'on') {
-                $('#fixednavbar2').prop('checked', 'checked')
-            }
-            if (boxedlayout == 'on') {
-                $('#boxedlayout').prop('checked', 'checked')
-            }
-            if (fixedfooter == 'on') {
-                $('#fixedfooter').prop('checked', 'checked')
-            }
-        }
-    </script>
-
+    <!-- Edit profile -->
+    <script src="js/functions/edit_profile.js"></script>
 
 </body>
 

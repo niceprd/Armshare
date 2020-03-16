@@ -2319,6 +2319,7 @@ button:focus {
 .btn-default {
     color: inherit;
     background: white;
+    border: 1px solid #e7eaec;
 }
 
 .btn-default:hover,
@@ -3663,6 +3664,7 @@ a.widget.style1 {
 a .widget.style1.btn-default {
     background-color: rgb(165, 165, 165);
     color: white;
+    border: none;
 }
 
 a.widget.style1:hover {
@@ -8586,6 +8588,11 @@ table.issue-tracker tbody tr td {
     width: 42px;
     height: 42px;
     margin-bottom: 5px;
+}
+
+input {
+    border: none;
+    border-color: transparent;
 }
 
 
