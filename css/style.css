@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url('../fonts/glyphicons-halflings-regular.eot');
@@ -8008,6 +8009,17 @@ a.compose-mail {
     padding: 20px;
 }
 
+.profile-heading {
+    font-size: 18px;
+    color: black;
+}
+
+.profile-content {
+    font-size: 19px;
+    color: silver;
+    font-family: 'Cutive Mono', monospace;
+}
+
 #profileImage {
     cursor: pointer;
 }
@@ -11413,6 +11425,23 @@ body.rtls.top-navigation .footer.fixed {
     margin: 14px 5px 5px 30px;
 }
 
+.skin-1 .red-bg,
+.skin-1 .bg-danger {
+    background-color: #ef630e !important;
+}
+
+.skin-1 .ibox-content.no-padding .list-group-item .sub-menu-item {
+    color: #000 !important;
+}
+
+.skin-1 .ibox-content.no-padding .active.list-group-item>a {
+    color: white !important;
+}
+
+.skin-1 .ibox-content.no-padding .active.list-group-item>i {
+    color: white !important;
+}
+
 body.skin-1 ul.nav.navbar-top-links.navbar-right li span a {
     color: #0e9aef !important;
 }
@@ -11558,6 +11587,10 @@ body.skin-1 {
 
 .skin-1 .ibox-content.ibox-heading a>span {
     color: #0e9aef !important;
+}
+
+.skin-1 .nav-header a>span.text-muted {
+    color: #d6d0d0 !important;
 }
 
 
@@ -11771,6 +11804,24 @@ body.skin-2 #wrapper {
 
 .skin-3 .ibox-content.no-padding .list-group-item a {
     color: #ecba52 !important;
+}
+
+.skin-3 .ibox-content.no-padding .list-group-item .sub-menu-item {
+    color: #000 !important;
+}
+
+.skin-3 .nav-header a>span.text-muted {
+    color: #d6d0d0 !important;
+}
+
+.skin-3 .red-bg,
+.skin-3 .bg-danger {
+    background-color: #23c6c8 !important;
+}
+
+.skin-3 .ibox-content.no-padding .active.list-group-item>a,
+.skin-3 .ibox-content.no-padding .active.list-group-item>i {
+    color: white !important;
 }
 
 .skin-3 .ibox-content.ibox-heading a>span {
@@ -12179,6 +12230,11 @@ body.skin-5 {
 
 body.skin-5 ul.nav.navbar-top-links.navbar-right li span a {
     color: #e74258 !important;
+}
+
+.skin-5 .profile-heading {
+    font-size: 18px;
+    color: #8d8d8d
 }
 
 .skin-5 .emojionearea .emojionearea-editor {
