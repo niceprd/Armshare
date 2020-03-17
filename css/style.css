@@ -2572,11 +2572,11 @@ a.btn-primary.dim:active {
 }
 
 a.btn-default.dim {
-    box-shadow: inset 0 0 0 #b3b3b3, 0 5px 0 0 #b3b3b3, 0 10px 5px #999999 !important;
+    box-shadow: inset 0 0 0 #7e7e7e, 0 5px 0 0 #7e7e7e, 0 10px 5px #999999 !important;
 }
 
 a.btn-default.dim:active {
-    box-shadow: inset 0 0 0 #b3b3b3, 0 2px 0 0 #b3b3b3, 0 5px 3px #999999 !important;
+    box-shadow: inset 0 0 0 #7e7e7e, 0 2px 0 0 #7e7e7e, 0 5px 3px #999999 !important;
 }
 
 a.btn-warning.dim {
@@ -2636,11 +2636,11 @@ a.dim>.btn-primary:active {
 }
 
 a.dim>.btn-default {
-    box-shadow: inset 0 0 0 #b3b3b3, 0 5px 0 0 #b3b3b3, 0 10px 5px #999999 !important;
+    box-shadow: inset 0 0 0 #7e7e7e, 0 5px 0 0 #7e7e7e, 0 10px 5px #999999 !important;
 }
 
 a.dim>.btn-default:active {
-    box-shadow: inset 0 0 0 #b3b3b3, 0 2px 0 0 #b3b3b3, 0 5px 3px #999999 !important;
+    box-shadow: inset 0 0 0 #7e7e7e, 0 2px 0 0 #7e7e7e, 0 5px 3px #999999 !important;
 }
 
 a.dim:before {
@@ -8017,9 +8017,14 @@ a.compose-mail {
 }
 
 .profile-content {
+    padding-left: 10px;
     font-size: 19px;
     color: silver;
     font-family: 'Cutive Mono', monospace;
+}
+
+.form-profile {
+    border-radius: 4px;
 }
 
 #profileImage {
@@ -11432,9 +11437,18 @@ body.rtls.top-navigation .footer.fixed {
     margin: 14px 5px 5px 30px;
 }
 
-.skin-1 .red-bg,
-.skin-1 .bg-danger {
+.skin-1 li.active.list-group-item.bg-danger {
     background-color: #ef630e !important;
+}
+
+.skin-1 a.btn-primary.dim {
+    box-shadow: inset 0 0 0 #037cc7, 0 5px 0 0 #037cc7, 0 10px 5px #999999 !important;
+}
+
+.skin-1 a.btn-primary.dim:active {
+    background-color: #037cc7;
+    border-color: #037cc7;
+    box-shadow: inset 0 0 0 #037cc7, 0 2px 0 0 #037cc7, 0 5px 3px #999999 !important;
 }
 
 .skin-1 .ibox-content.no-padding .list-group-item .sub-menu-item {
@@ -11618,6 +11632,16 @@ body.skin-2 ul.nav.navbar-top-links.navbar-right li span a {
 
 .skin-2 .nav.navbar-top-links.navbar-right a:hover {
     color: white !important;
+}
+
+.skin-2 a.btn-primary.dim {
+    box-shadow: inset 0 0 0 #1fb3b6, 0 5px 0 0 #1fb3b6, 0 8px 5px #999999 !important;
+}
+
+.skin-2 a.btn-primary.dim:active {
+    background-color: #23c6c8;
+    border-color: #23c6c8;
+    box-shadow: inset 0 0 0 #1fb3b6, 0 2px 0 0 #1fb3b6, 0 5px 3px #999999 !important;
 }
 
 .skin-2 .minimalize-styl-2 {
@@ -11817,12 +11841,21 @@ body.skin-2 #wrapper {
     color: #000 !important;
 }
 
+.skin-3 a.btn-primary.dim {
+    box-shadow: inset 0 0 0 #dbae4c, 0 5px 0 0 #dbae4c, 0 10px 5px #999999 !important;
+}
+
+.skin-3 a.btn-primary.dim:active {
+    background-color: #ecba52;
+    border-color: #ecba52;
+    box-shadow: inset 0 0 0 #dbae4c, 0 2px 0 0 #dbae4c, 0 5px 3px #999999 !important;
+}
+
 .skin-3 .nav-header a>span.text-muted {
     color: #d6d0d0 !important;
 }
 
-.skin-3 .red-bg,
-.skin-3 .bg-danger {
+.skin-3 li.active.list-group-item.bg-danger {
     background-color: #23c6c8 !important;
 }
 
@@ -12239,9 +12272,23 @@ body.skin-5 ul.nav.navbar-top-links.navbar-right li span a {
     color: #e74258 !important;
 }
 
+.skin-5 .form-profile {
+    background-color: #4d4d4d;
+}
+
 .skin-5 .profile-heading {
     font-size: 18px;
     color: #8d8d8d
+}
+
+.skin-5 a.btn-primary.dim {
+    box-shadow: inset 0 0 0 #a82536, 0 5px 0 0 #a82536, 0 10px 5px #999999 !important;
+}
+
+.skin-5 a.btn-primary.dim:active {
+    background-color: #c72c41;
+    border-color: #c72c41;
+    box-shadow: inset 0 0 0 #a82536, 0 2px 0 0 #a82536, 0 5px 3px #999999 !important;
 }
 
 .skin-5 .emojionearea .emojionearea-editor {

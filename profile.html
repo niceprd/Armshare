@@ -103,7 +103,7 @@
             <div class="row border-bottom">
                 <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
                     <div class="navbar-header">
-                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary dim" href="#"><i
                                 class="fa fa-bars"></i> </a>
                         <form role="search" class="navbar-form-custom" action="search_results.html">
                             <div class="form-group">
@@ -285,7 +285,7 @@
                                                     <div class="profile-heading">Name</div>
                                                 </div>
                                                 <div class="col-3 mt-3 mb-3">
-                                                    <input type="text" class="profile-content" id="accountName" name="accountName" value="Ekarat Co., Ltd.">
+                                                    <input type="text" class="form-profile profile-content" id="accountName" name="accountName" value="Ekarat Co., Ltd.">
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -293,7 +293,7 @@
                                                     <div class="profile-heading">Username</div>
                                                 </div>
                                                 <div class="col-3 mt-3 mb-3">
-                                                    <input type="text" class="profile-content" id="userName" name="userName" value="aragent02">
+                                                    <input type="text" class="form-profile profile-content" id="userName" name="userName" value="aragent02">
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -305,11 +305,15 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-1 mt-5 ml-5">
-                                                    <input type="button" class="btn btn-success btn-rounded submit" onclick="submitPF()" value="Save Change">
+                                                <div class="col-1.5 mt-5 ml-5">
+                                                    <button type="button" class="btn btn-success btn-rounded dim submit" onclick="submitPF()">
+                                                    <i class="fa fa-check"></i>&nbsp;Save Change
+                                                </button>
                                                 </div>
-                                                <div class="col-1 mt-5">
-                                                    <input type="reset" class="btn btn-warning btn-rounded submit" value="Cancel">
+                                                <div class="col-2 mt-5">
+                                                    <button type="reset" class="btn btn-warning btn-rounded dim submit">
+                                                        <i class="fa fa-times"></i>&nbsp;Cancel
+                                                    </button>
                                                 </div>
                                             </div>
                                         </form>
