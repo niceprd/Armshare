@@ -5842,16 +5842,13 @@ body.boxed-layout #wrapper {
 
 body.boxed-layout .widget {
     border-radius: 5px;
-    padding: 5px 10px;
-    padding-left: 5px !important;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    width: 117% !important;
-    font-size: 5px !important;
+    height: 7vh;
+    width: 115% !important;
+    font-size: 10px !important;
 }
 
 body.boxed-layout .widget h2 {
-    font-size: 2px !important;
+    font-size: 15px !important;
 }
 
 body.boxed-layout .dashboard-header {
