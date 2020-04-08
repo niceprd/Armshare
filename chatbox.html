@@ -94,9 +94,7 @@
                 <hr>
                 <div class="arm-logo-main">
                     <a href="index.html">
-                        <img src="img/app_logo_hdr2.png" class="img-fluid text-center animated fadeInUp" width="200px"
-                            height="100px" alt="Armshare"
-                            style="margin: 4%; background-color: #3b6c85; border-radius: 5px;">
+                        <img src="img/app_logo_hdr2.png" class="img-fluid animated fadeInUp" alt="Armshare">
                     </a>
                 </div>
             </div>
@@ -145,7 +143,7 @@
                                         <a class="dropdown-item float-left" href="profile.html">
                                             <img alt="image" class="rounded-circle" src="img/a4.jpg">
                                         </a>
-                                        <div class="media-body ">
+                                        <div class="media-body">
                                             <small class="float-right text-navy">5h ago</small>
                                             <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica
                                                 Smith</strong>. <br>
@@ -233,108 +231,120 @@
             <!-- Content  -->
 
             <div class="wrapper wrapper-content animated fadeInRight">
-                <div class="row border-bottom white-bg dashboard-header">
-                    <div class="col-lg-2">
-                        <a role="button" href="chatbox.html" class="new-msg dim" data-animation="tada">
-                            <div class="widget style1 red-bg">
-                                <div class="row">
-                                    <div class="col-4 text-center">
-                                        <div id="new-msg">
-                                            <i class="fa fa-comments fa-3x"></i>
+                <div class="row border-bottom dashboard-header">
+                    <div class="col-lg-12 no-padding">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <a role="button" href="chatbox.html" class="new-msg dim" data-animation="tada">
+                                    <div class="widget style1 red-bg">
+                                        <div class="row">
+                                            <div class="col-4 text-center">
+                                                <div id="new-msg">
+                                                    <i class="fa fa-comments"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-right box-btn">
+                                                <span>
+                                                    <div>New</div>
+                                                    <h2 class="font-bold" id="ranNum"></h2>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-8 text-right box-btn">
-                                        <span>New</span>
-                                        <h2 class="font-bold" id="ranNum"></h2>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a role="button" href="chatbox.html" class="pend-msg dim" data-animation="pulse">
-                            <div class="widget style1 yellow-bg">
-                                <div class="row">
-                                    <div class="col-4 text-center">
-                                        <div id="pend-msg">
-                                            <i class="fa fa-clock-o fa-3x"></i>
+                            <div class="col-lg-2">
+                                <a role="button" href="chatbox.html" class="pend-msg dim" data-animation="pulse">
+                                    <div class="widget style1 yellow-bg">
+                                        <div class="row">
+                                            <div class="col-4 text-center">
+                                                <div id="pend-msg">
+                                                    <i class="fa fa-clock-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-right box-btn">
+                                                <span>
+                                                    <div>Pending</div>
+                                                    <h2 class="font-bold" id="ranNum1">5</h2>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-8 text-right box-btn">
-                                        <span>Pending</span>
-                                        <h2 class="font-bold" id="ranNum1">5</h2>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a role="button" href="chatbox.html" class="cls-msg dim" data-animation="pulse">
-                            <div class="widget style1 btn-primary">
-                                <div class="row">
-                                    <div class="col-4 text-center">
-                                        <div id="cls-msg">
-                                            <i class="fa fa-check-circle-o fa-3x"></i>
+                            <div class="col-lg-2">
+                                <a role="button" href="chatbox.html" class="cls-msg dim" data-animation="pulse">
+                                    <div class="widget style1 btn-primary">
+                                        <div class="row">
+                                            <div class="col-4 text-center">
+                                                <div id="cls-msg">
+                                                    <i class="fa fa-check-circle-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-right box-btn">
+                                                <span>
+                                                    <div>closed</div>
+                                                    <h2 class="font-bold" id="ranNum2"></h2>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-8 text-right box-btn">
-                                        <span>closed</span>
-                                        <h2 class="font-bold" id="ranNum2"></h2>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a role="button" href="chatbox.html" class="inb dim" data-animation="swing">
-                            <div class="widget style1 btn-default">
-                                <div class="row">
-                                    <div class="col-4 text-center">
-                                        <div id="inb">
-                                            <i class="fa fa-envelope fa-3x"></i>
+                            <div class="col-lg-2">
+                                <a role="button" href="chatbox.html" class="inb dim" data-animation="swing">
+                                    <div class="widget style1 btn-default">
+                                        <div class="row">
+                                            <div class="col-4 text-center">
+                                                <div id="inb">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-right box-btn">
+                                                <span>
+                                                    <div>inbox</div>
+                                                    <h2 class="font-bold" id="ranNum3"></h2>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-8 text-right box-btn">
-                                        <span>inbox</span>
-                                        <h2 class="font-bold" id="ranNum3"></h2>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a role="button" href="chatbox.html" class="upost dim" data-animation="pulse">
-                            <div class="widget style1 btn-default">
-                                <div class="row">
-                                    <div class="col-4 text-center">
-                                        <div id="upost">
-                                            <i class="fa fa-edit fa-3x"></i>
+                            <div class="col-lg-2">
+                                <a role="button" href="chatbox.html" class="upost dim" data-animation="pulse">
+                                    <div class="widget style1 btn-default">
+                                        <div class="row">
+                                            <div class="col-4 text-center">
+                                                <div id="upost">
+                                                    <i class="fa fa-edit"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-right box-btn">
+                                                <span>user post</span>
+                                                <h2 class="font-bold" id="ranNum4"></h2>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-8 text-right box-btn">
-                                        <span>user post</span>
-                                        <h2 class="font-bold" id="ranNum4"></h2>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a role="button" href="chatbox.html" class="ppost dim" data-animation="pulse">
-                            <div class="widget style1 btn-default">
-                                <div class="row">
-                                    <div class="col-4 text-center">
-                                        <div id="ppost">
-                                            <i class="fa fa-share-alt-square fa-3x"></i>
+                            <div class="col-lg-2">
+                                <a role="button" href="chatbox.html" class="ppost dim" data-animation="pulse">
+                                    <div class="widget style1 btn-default">
+                                        <div class="row">
+                                            <div class="col-4 text-center">
+                                                <div id="ppost">
+                                                    <i class="fa fa-share-alt-square "></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 text-right box-btn">
+                                                <span>page post</span>
+                                                <h2 class="font-bold" id="ranNum5"></h2>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-8 text-right box-btn">
-                                        <span>page post</span>
-                                        <h2 class="font-bold" id="ranNum5"></h2>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row" style="padding-top: 20px;">
@@ -366,7 +376,8 @@
                                                     style="width: 40px; height: 40px;">
                                                 <a class="text-navy open-link" href="#">
                                                     Chat Number 1</a>
-                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minute
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 1
+                                                    minute
                                                     ago</small>
                                             </li>
                                             <li class="list-group-item">
@@ -374,7 +385,8 @@
                                                     style="width: 40px; height: 40px;">
                                                 <a class="text-navy open-link1" href="#">
                                                     Chat Number 2</a>
-                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 10 minutes
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 10
+                                                    minutes
                                                     ago</small>
                                             </li>
                                             <li class="list-group-item">
@@ -382,7 +394,8 @@
                                                     style="width: 40px; height: 40px;">
                                                 <a class="text-navy open-link2" href="#">
                                                     Chat Number 3</a>
-                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 20 minutes
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 20
+                                                    minutes
                                                     ago</small>
                                             </li>
                                             <li class="list-group-item ">
@@ -390,7 +403,8 @@
                                                     style="width: 40px; height: 40px;">
                                                 <a class="text-navy" href="#">
                                                     Chat Number 4</a>
-                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 hour
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 1
+                                                    hour
                                                     ago</small>
                                             </li>
                                             <li class="list-group-item">
@@ -398,7 +412,8 @@
                                                     style="width: 40px; height: 40px;">
                                                 <a class="text-navy" href="#">
                                                     Chat Number 5</a>
-                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 hours
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 2
+                                                    hours
                                                     ago</small>
                                             </li>
                                             <li class="list-group-item">
@@ -406,7 +421,8 @@
                                                     style="width: 40px; height: 40px;">
                                                 <a class="text-navy" href="#">
                                                     Chat Number 6</a>
-                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 day
+                                                <small class="block text-muted"><i class="fa fa-clock-o"></i> 1
+                                                    day
                                                     ago</small>
                                             </li>
                                         </ul>
@@ -464,14 +480,19 @@
                                                                 <div class="chat-message left">
                                                                     <img class="message-avatar" src="img/a1.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Michael
+                                                                        <a class="message-author" href="#">
+                                                                            Michael
                                                                             Smith </a>
-                                                                        <span class="message-date"> Mon Jan 26 2015 -
+                                                                        <span class="message-date"> Mon Jan 26
+                                                                            2015 -
                                                                             18:39:23 </span>
                                                                         <span class="message-content">
-                                                                            Lorem ipsum dolor sit amet, consectetuer
-                                                                            adipiscing elit, sed diam nonummy nibh
-                                                                            euismod tincidunt ut laoreet dolore magna
+                                                                            Lorem ipsum dolor sit amet,
+                                                                            consectetuer
+                                                                            adipiscing elit, sed diam nonummy
+                                                                            nibh
+                                                                            euismod tincidunt ut laoreet dolore
+                                                                            magna
                                                                             aliquam erat volutpat.
                                                                         </span>
                                                                     </div>
@@ -479,14 +500,19 @@
                                                                 <div class="chat-message right">
                                                                     <img class="message-avatar" src="img/a4.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Karl Jordan
+                                                                        <a class="message-author" href="#"> Karl
+                                                                            Jordan
                                                                         </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content text-left">
-                                                                            Many desktop publishing packages and web
-                                                                            page editors now use Lorem Ipsum as their
-                                                                            default model text, and a search for 'lorem
+                                                                            Many desktop publishing packages and
+                                                                            web
+                                                                            page editors now use Lorem Ipsum as
+                                                                            their
+                                                                            default model text, and a search for
+                                                                            'lorem
                                                                             ipsum' will uncover.
                                                                         </span>
                                                                     </div>
@@ -494,13 +520,17 @@
                                                                 <div class="chat-message right">
                                                                     <img class="message-avatar" src="img/a2.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Michael
+                                                                        <a class="message-author" href="#">
+                                                                            Michael
                                                                             Smith </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content text-left">
-                                                                            There are many variations of passages of
-                                                                            Lorem Ipsum available, but the majority have
+                                                                            There are many variations of
+                                                                            passages of
+                                                                            Lorem Ipsum available, but the
+                                                                            majority have
                                                                             suffered alteration.
                                                                         </span>
                                                                     </div>
@@ -508,16 +538,22 @@
                                                                 <div class="chat-message left">
                                                                     <img class="message-avatar" src="img/a5.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Alice Jordan
+                                                                        <a class="message-author" href="#">
+                                                                            Alice Jordan
                                                                         </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content">
-                                                                            All the Lorem Ipsum generators on the
-                                                                            Internet tend to repeat predefined chunks as
-                                                                            necessary, making this the first true
+                                                                            All the Lorem Ipsum generators on
+                                                                            the
+                                                                            Internet tend to repeat predefined
+                                                                            chunks as
+                                                                            necessary, making this the first
+                                                                            true
                                                                             generator on the Internet.
-                                                                            It uses a dictionary of over 200 Latin
+                                                                            It uses a dictionary of over 200
+                                                                            Latin
                                                                             words.
                                                                         </span>
                                                                     </div>
@@ -525,16 +561,22 @@
                                                                 <div class="chat-message right">
                                                                     <img class="message-avatar" src="img/a6.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Mark Smith
+                                                                        <a class="message-author" href="#"> Mark
+                                                                            Smith
                                                                         </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content text-left">
-                                                                            All the Lorem Ipsum generators on the
-                                                                            Internet tend to repeat predefined chunks as
-                                                                            necessary, making this the first true
+                                                                            All the Lorem Ipsum generators on
+                                                                            the
+                                                                            Internet tend to repeat predefined
+                                                                            chunks as
+                                                                            necessary, making this the first
+                                                                            true
                                                                             generator on the Internet.
-                                                                            It uses a dictionary of over 200 Latin
+                                                                            It uses a dictionary of over 200
+                                                                            Latin
                                                                             words.
                                                                         </span>
                                                                     </div>
@@ -621,14 +663,19 @@
                                                                 <div class="chat-message left">
                                                                     <img class="message-avatar" src="img/a1.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Michael
+                                                                        <a class="message-author" href="#">
+                                                                            Michael
                                                                             Smith </a>
-                                                                        <span class="message-date"> Mon Jan 26 2015 -
+                                                                        <span class="message-date"> Mon Jan 26
+                                                                            2015 -
                                                                             18:39:23 </span>
                                                                         <span class="message-content">
-                                                                            Lorem ipsum dolor sit amet, consectetuer
-                                                                            adipiscing elit, sed diam nonummy nibh
-                                                                            euismod tincidunt ut laoreet dolore magna
+                                                                            Lorem ipsum dolor sit amet,
+                                                                            consectetuer
+                                                                            adipiscing elit, sed diam nonummy
+                                                                            nibh
+                                                                            euismod tincidunt ut laoreet dolore
+                                                                            magna
                                                                             aliquam erat volutpat.
                                                                         </span>
                                                                     </div>
@@ -636,14 +683,19 @@
                                                                 <div class="chat-message right">
                                                                     <img class="message-avatar" src="img/a4.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Karl Jordan
+                                                                        <a class="message-author" href="#"> Karl
+                                                                            Jordan
                                                                         </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content text-left">
-                                                                            Many desktop publishing packages and web
-                                                                            page editors now use Lorem Ipsum as their
-                                                                            default model text, and a search for 'lorem
+                                                                            Many desktop publishing packages and
+                                                                            web
+                                                                            page editors now use Lorem Ipsum as
+                                                                            their
+                                                                            default model text, and a search for
+                                                                            'lorem
                                                                             ipsum' will uncover.
                                                                         </span>
                                                                     </div>
@@ -651,13 +703,17 @@
                                                                 <div class="chat-message right">
                                                                     <img class="message-avatar" src="img/a2.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Michael
+                                                                        <a class="message-author" href="#">
+                                                                            Michael
                                                                             Smith </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content text-left">
-                                                                            There are many variations of passages of
-                                                                            Lorem Ipsum available, but the majority have
+                                                                            There are many variations of
+                                                                            passages of
+                                                                            Lorem Ipsum available, but the
+                                                                            majority have
                                                                             suffered alteration.
                                                                         </span>
                                                                     </div>
@@ -665,16 +721,22 @@
                                                                 <div class="chat-message left">
                                                                     <img class="message-avatar" src="img/a5.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Alice Jordan
+                                                                        <a class="message-author" href="#">
+                                                                            Alice Jordan
                                                                         </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content">
-                                                                            All the Lorem Ipsum generators on the
-                                                                            Internet tend to repeat predefined chunks as
-                                                                            necessary, making this the first true
+                                                                            All the Lorem Ipsum generators on
+                                                                            the
+                                                                            Internet tend to repeat predefined
+                                                                            chunks as
+                                                                            necessary, making this the first
+                                                                            true
                                                                             generator on the Internet.
-                                                                            It uses a dictionary of over 200 Latin
+                                                                            It uses a dictionary of over 200
+                                                                            Latin
                                                                             words.
                                                                         </span>
                                                                     </div>
@@ -682,16 +744,22 @@
                                                                 <div class="chat-message right">
                                                                     <img class="message-avatar" src="img/a6.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Mark Smith
+                                                                        <a class="message-author" href="#"> Mark
+                                                                            Smith
                                                                         </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content text-left">
-                                                                            All the Lorem Ipsum generators on the
-                                                                            Internet tend to repeat predefined chunks as
-                                                                            necessary, making this the first true
+                                                                            All the Lorem Ipsum generators on
+                                                                            the
+                                                                            Internet tend to repeat predefined
+                                                                            chunks as
+                                                                            necessary, making this the first
+                                                                            true
                                                                             generator on the Internet.
-                                                                            It uses a dictionary of over 200 Latin
+                                                                            It uses a dictionary of over 200
+                                                                            Latin
                                                                             words.
                                                                         </span>
                                                                     </div>
@@ -764,14 +832,19 @@
                                                                 <div class="chat-message left">
                                                                     <img class="message-avatar" src="img/a1.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Michael
+                                                                        <a class="message-author" href="#">
+                                                                            Michael
                                                                             Smith </a>
-                                                                        <span class="message-date"> Mon Jan 26 2015 -
+                                                                        <span class="message-date"> Mon Jan 26
+                                                                            2015 -
                                                                             18:39:23 </span>
                                                                         <span class="message-content">
-                                                                            Lorem ipsum dolor sit amet, consectetuer
-                                                                            adipiscing elit, sed diam nonummy nibh
-                                                                            euismod tincidunt ut laoreet dolore magna
+                                                                            Lorem ipsum dolor sit amet,
+                                                                            consectetuer
+                                                                            adipiscing elit, sed diam nonummy
+                                                                            nibh
+                                                                            euismod tincidunt ut laoreet dolore
+                                                                            magna
                                                                             aliquam erat volutpat.
                                                                         </span>
                                                                     </div>
@@ -779,14 +852,19 @@
                                                                 <div class="chat-message right">
                                                                     <img class="message-avatar" src="img/a4.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Karl Jordan
+                                                                        <a class="message-author" href="#"> Karl
+                                                                            Jordan
                                                                         </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content text-left">
-                                                                            Many desktop publishing packages and web
-                                                                            page editors now use Lorem Ipsum as their
-                                                                            default model text, and a search for 'lorem
+                                                                            Many desktop publishing packages and
+                                                                            web
+                                                                            page editors now use Lorem Ipsum as
+                                                                            their
+                                                                            default model text, and a search for
+                                                                            'lorem
                                                                             ipsum' will uncover.
                                                                         </span>
                                                                     </div>
@@ -794,13 +872,17 @@
                                                                 <div class="chat-message right">
                                                                     <img class="message-avatar" src="img/a2.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Michael
+                                                                        <a class="message-author" href="#">
+                                                                            Michael
                                                                             Smith </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content text-left">
-                                                                            There are many variations of passages of
-                                                                            Lorem Ipsum available, but the majority have
+                                                                            There are many variations of
+                                                                            passages of
+                                                                            Lorem Ipsum available, but the
+                                                                            majority have
                                                                             suffered alteration.
                                                                         </span>
                                                                     </div>
@@ -808,16 +890,22 @@
                                                                 <div class="chat-message left">
                                                                     <img class="message-avatar" src="img/a5.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Alice Jordan
+                                                                        <a class="message-author" href="#">
+                                                                            Alice Jordan
                                                                         </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content">
-                                                                            All the Lorem Ipsum generators on the
-                                                                            Internet tend to repeat predefined chunks as
-                                                                            necessary, making this the first true
+                                                                            All the Lorem Ipsum generators on
+                                                                            the
+                                                                            Internet tend to repeat predefined
+                                                                            chunks as
+                                                                            necessary, making this the first
+                                                                            true
                                                                             generator on the Internet.
-                                                                            It uses a dictionary of over 200 Latin
+                                                                            It uses a dictionary of over 200
+                                                                            Latin
                                                                             words.
                                                                         </span>
                                                                     </div>
@@ -825,16 +913,22 @@
                                                                 <div class="chat-message right">
                                                                     <img class="message-avatar" src="img/a6.jpg" alt="">
                                                                     <div class="message">
-                                                                        <a class="message-author" href="#"> Mark Smith
+                                                                        <a class="message-author" href="#"> Mark
+                                                                            Smith
                                                                         </a>
-                                                                        <span class="message-date"> Fri Jan 25 2015 -
+                                                                        <span class="message-date"> Fri Jan 25
+                                                                            2015 -
                                                                             11:12:36 </span>
                                                                         <span class="message-content text-left">
-                                                                            All the Lorem Ipsum generators on the
-                                                                            Internet tend to repeat predefined chunks as
-                                                                            necessary, making this the first true
+                                                                            All the Lorem Ipsum generators on
+                                                                            the
+                                                                            Internet tend to repeat predefined
+                                                                            chunks as
+                                                                            necessary, making this the first
+                                                                            true
                                                                             generator on the Internet.
-                                                                            It uses a dictionary of over 200 Latin
+                                                                            It uses a dictionary of over 200
+                                                                            Latin
                                                                             words.
                                                                         </span>
                                                                     </div>
